@@ -1,3 +1,13 @@
+# 전송 버튼 주변 재검사 1.2.2
+
+[1.2.2 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.2-detection-arm64.apk)
+
+찾아둔 전송 버튼 주변을 최대 3.5초 유지해 입력창 포커스가 사라져도 작은 영역에서 생성 상태를 확인합니다. 전체 대화 탐색 한도로 누락될 가능성을 줄이기 위한 수정이며 실제 S24에서의 성공은 아직 미확인입니다. API 설정은 필요하지 않습니다.
+
+기존 앱 위에 업데이트 → 접근성 서비스 껐다 켜기 → 입력 신호 보완 감지 켜짐 확인 → ChatGPT에서 질문 1개 보내기 → 프롬프트 수 확인. 계속 0이면 감지 상태 공유의 입력창 비움·생성 확인·scanScope를 함께 확인할 수 있습니다. cached_composer는 찾아둔 버튼 주변을 검사했다는 뜻입니다.
+
+---
+
 # ChatGPT 입력·생성 상태 감지 보완 1.2.1
 
 [1.2.1 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.1-detection-arm64.apk)
