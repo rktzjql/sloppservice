@@ -1,3 +1,15 @@
+# 전송 감지 보완 1.1.2
+
+[1.1.2 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.2-detection-arm64.apk)
+
+ChatGPT에서 일반 클릭 요소로 노출되는 전송/중지 버튼을 놓칠 수 있는 상태 감지 로직을 수정했습니다. 감지 상태 공유 버튼도 추가했습니다. 보고된 실제 휴대폰에서 해결되는지는 아직 확인 전입니다.
+
+기존 앱 위에 업데이트 설치한 뒤, 마이 → 기존 영수증·Android 자동 기록 설정 → 접근성 설정 다시 열기에서 서비스를 껐다 켜 주세요. ChatGPT 앱에서 텍스트 질문을 보내고 돌아와 기록을 확인하세요. 여전히 기록이 없으면 ‘감지 상태 공유하기’ 결과를 전달하면 됩니다. 공유에는 질문/답변 내용이 포함되지 않습니다.
+
+타입 검사·앱 테스트·네이티브 테스트 18개 통과.
+
+---
+
 # 프롬프트 개선 · 학습 1.1.1
 
 [1.1.1 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.1-learning-arm64.apk)
