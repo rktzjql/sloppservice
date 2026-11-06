@@ -1,3 +1,15 @@
+# 앱에서 직접 AI 질문 1.2.0
+
+[1.2.0 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.0-api-arm64.apk)
+
+[API 서버 코드·설정 안내 ZIP](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.0-api-server.zip)
+
+홈 → AI에게 직접 질문하기에서 서버 연결 → 질문 → API 응답 완료와 실제 토큰 사용량 확인을 제공합니다. **현재 OpenAI API 키와 공개 서버는 미설정입니다. 설치만으로 AI 답변이 나오지 않습니다.** 서버 ZIP의 server/README.md를 따라 Node 24 서버와 OpenAI 키를 설정한 뒤 앱에 HTTPS 주소/서버 접속 코드를 입력하세요. OpenAI API 키는 APK나 GitHub에 넣지 마세요.
+
+응답 유실 시 결과 확인 필요로 남기며 자동 재전송하지 않습니다. API 응답 완료만 성공 집계하고 원문을 디스크에 저장하지 않습니다. 토큰을 전력량으로 환산하지 않습니다. 앱·서버 테스트와 모바일 브라우저 검증을 통과했으며 실제 OpenAI API 및 Android 실기기 API 연결은 아직 미검증입니다.
+
+---
+
 # 입력·생성 신호 보완 감지 1.1.4
 
 [1.1.4 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.4-signals-arm64.apk)
