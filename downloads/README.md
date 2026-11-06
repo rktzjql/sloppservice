@@ -1,3 +1,13 @@
+# 입력창 주변 우선 감지 1.1.3
+
+[1.1.3 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.3-detection-arm64.apk)
+
+긴 ChatGPT 대화에서 화면 탐색 한도에 걸린 진단을 바탕으로 입력창 주변을 먼저 검사하도록 변경했습니다. 접근성 설정 활성화와 실제 서비스 연결을 구분하고, 연결 해제 시각과 탐색량을 진단에 추가했습니다. 실제 S24에서의 인식 성공은 확인 전입니다.
+
+기존 앱 위에 업데이트 설치 → Android 접근성 서비스 껐다 켜기 → ChatGPT 새 대화에 짧은 질문 입력 → 약 1초 후 전송 → 영수증 확인. 이후 긴 대화에서도 확인하세요. 실패하면 ‘감지 상태 공유하기’의 새 결과를 보내 주세요.
+
+---
+
 # 전송 감지 보완 1.1.2
 
 [1.1.2 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.2-detection-arm64.apk)
