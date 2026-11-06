@@ -1,3 +1,17 @@
+# 프롬프트 개선 · 학습 1.1.1
+
+[1.1.1 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.1.1-learning-arm64.apk)
+
+Android 7 이상 arm64용 테스트 APK입니다. 기존 앱 위에 업데이트 설치하세요. 개발 서버나 Expo Go 없이 실행합니다. 앱 표시 이름은 AI SLOP STOP이며 새 이름은 아직 적용하지 않았습니다.
+
+질문 입력 → 목적·제약·형식 추가 → 원문과 비교·직접 편집 → 선택형 복습 → 완료 보상·공유를 제공합니다. 완료해야 하루 연습 1회를 사용하며 첫 완료에만 +5 EP를 지급합니다. 기존 기록은 유지합니다. 실제 AI 분석·모델 호출은 연결하지 않았습니다.
+
+타입 검사·테스트·모바일 Chromium 학습 흐름과 저장 유지·APK 빌드·서명 확인 완료. 실제 휴대폰 설치·공유 동작은 확인 전입니다.
+
+SHA-256: `031ca8c2190909b18a068d3229ba4887f2c59c7d5c3f2e1e83178faf3b8aa78a`
+
+---
+
 # 최신: 프롬프트 전력량 영수증 1.0.4
 
 [최신 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.0.4-receipt-arm64.apk)
