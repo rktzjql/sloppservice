@@ -1,3 +1,13 @@
+# ChatGPT 입력·생성 상태 감지 보완 1.2.1
+
+[1.2.1 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.1-detection-arm64.apk)
+
+API 없이 기존 접근성으로 사용하는 기능을 보완했습니다. 입력창 위의 키보드와 활성 앱 창을 구분하고 일시적인 화면 루트 누락을 제한적으로 다시 확인합니다. 입력창 비움/생성 상태 확인 횟수와 실패 원인을 분리해 표시합니다. 입력 상태 확인 횟수 자체를 프롬프트 수로 세지 않습니다. 실제 S24 인식 성공은 아직 미확인입니다.
+
+기존 앱 위에 설치 → 접근성 서비스 껐다 켜기 → 기존 자동 기록 설정의 입력 신호 보완 감지 켜짐 확인 → ChatGPT에서 텍스트 질문 한 번 전송 → 프롬프트 수 확인. 계속 0이면 새 ‘감지 상태 공유하기’에서 입력창 비움과 생성 상태 확인 단계를 구분할 수 있습니다. API 직접 질문 화면의 서버 설정은 필요하지 않습니다.
+
+---
+
 # 앱에서 직접 AI 질문 1.2.0
 
 [1.2.0 APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/main/downloads/ai-slop-stop-v1.2.0-api-arm64.apk)
