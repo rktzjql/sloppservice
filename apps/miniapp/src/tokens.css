@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "AIMI UX";
+  src: url("/fonts/AIMI-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 500;
+  font-display: block;
+}
+@font-face {
+  font-family: "AIMI UX";
+  src: url("/fonts/AIMI-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: block;
+}
+:root {
+  /* Same Regular/Bold font binaries as tools/ux_pdf, losslessly encoded as WOFF2. */
+  --font-ui:
+    "AIMI UX", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    sans-serif;
+  --color-background: #f8faf0;
+  --color-background-top: #c3d9aa;
+  --color-background-bottom: #d7e7c4;
+  --color-ink: #242820;
+  --color-muted: #4c5944;
+  --color-brand: #527a41;
+  --color-brand-text: #274e2f;
+  --color-surface: #f1f5e9;
+  --color-weak: #e7eedd;
+  --color-garden: #4f783f;
+  --space-1: 4px;
+  --space-peer: 8px;
+  --space-copy-list: 12px;
+  --space-content: 16px;
+  --space-section: 24px;
+  --page-margin: 24px;
+  --card-padding: 16px;
+  --button-height: 56px;
+  --radius-button: 16px;
+  --radius-card: 20px;
+  --type-page-title: 22px;
+  --type-body: 15px;
+  --type-caption: 12px;
+}

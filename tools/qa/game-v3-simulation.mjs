@@ -1,0 +1,8 @@
+/** Supporting solvability/replay sweep. This is NOT the manual play/fun report. */
+import {initialGame,stepGame,replayGame,crossingRow} from '@aimi/game-core';
+import {mkdir,writeFile} from 'node:fs/promises';
+function segment(s,action){let n=stepGame(s,action?[action]:[]);for(let i=0;i<7 && n.status==='running';i++)n=stepGame(n);return n;}
+function plan(state){let beam=[{s:state,first:undefined}];for(let depth=0;depth<5;depth++) {const next=[];const seen=new Set();for(const node of beam)for(const action of ['forward','left','right',undefined,'back']){const n=segment(node.s,action);if(n.status==='failed'||n.status==='abandoned')continue;const key=[n.row,n.positionX.toFixed(2),n.tick].join(':');if(seen.has(key))continue;seen.add(key);next.push({s:n,first:depth===0?action:node.first});}next.sort((a,b)=>{const value=n=>n.s.maxRow*25+n.s.row*3+(crossingRow(n.s.seed,n.s.row)==='grass'?3:0)-Math.abs(n.s.positionX-4)*.2;return value(b)-value(a);});beam=next.slice(0,18);if(!beam.length)return null;}return beam[0];}
+const report=[];
+for(const seed of [1,2,3,9,12,55,123,2026]){let s=initialGame('crossing',seed),inputs=[];while(s.status==='running'){const choice=plan(s);if(!choice)break;const action=choice.first;if(action)inputs.push({tick:s.tick+1,action});s=segment(s,action);}const result={seed,status:s.status,score:s.score,ticks:s.tick};report.push(result);if(s.status!=='cleared')throw Error(JSON.stringify(result));const replay=replayGame('crossing',seed,inputs,s.tick);if(JSON.stringify(replay)!==JSON.stringify(s))throw Error('REPLAY_MISMATCH');}
+await mkdir('tmp/qa',{recursive:true});await writeFile('tmp/qa/v3-solvability.json',JSON.stringify({automatedSupportingCheck:true,report},null,2));console.log(JSON.stringify(report));

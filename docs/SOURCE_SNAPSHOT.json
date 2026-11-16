@@ -1,0 +1,2033 @@
+{
+  "source_repository": "https://github.com/fotrhh22/aimi-online",
+  "source_local_head": "2103d3a2b3098d4eeeb309fd786cc7fdf60c6e5f",
+  "snapshot_date": "2026-11-13",
+  "includes_local_uncommitted_changes": true,
+  "note": "현재 로컬 작업본에서 선별 복사. 원본 Git HEAD와 동일한 스냅샷이 아님. .env.example은 인계용으로 조정.",
+  "files": [
+    {
+      "path": ".node-version",
+      "sha256": "4137094e7792cb49fe1afddc3f87208f0ef4adfef7d3acd1def0198786d393c2"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "d4f26bafde3fb8e213d7440f59b056b8446b9905cfb428960c2db2453c238a88"
+    },
+    {
+      "path": ".nvmrc",
+      "sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56"
+    },
+    {
+      "path": "apps/api/.env.example",
+      "sha256": "3d11c1cbb887e293e3908779ea26cdec0321829f8fc2ab970b51014a3c553acd"
+    },
+    {
+      "path": "apps/api/package.json",
+      "sha256": "e7eacfa3da7290f7248b500905fa6cb900ba013f0b3c71cef8bc89dc4cfa170f"
+    },
+    {
+      "path": "apps/api/src/app.ts",
+      "sha256": "0a6a801effd69f5cefb05e8c4f541b27c56978e5e4a61836551591c84ab25ede"
+    },
+    {
+      "path": "apps/api/src/config.ts",
+      "sha256": "e8fd685b44cc9d5f527bc59c33de5672608fdcf48834ba7a35be7555c7039746"
+    },
+    {
+      "path": "apps/api/src/db.ts",
+      "sha256": "3b4711257b72518cf3d1d95080f649b1a68b03153f4556f0f0555fa8177b0b31"
+    },
+    {
+      "path": "apps/api/src/economy.ts",
+      "sha256": "8745b0ea06546cf253f54774a8eb97a84e14220c966ab618b0b0c2260b339431"
+    },
+    {
+      "path": "apps/api/src/migrate.ts",
+      "sha256": "bc5b6c58d5efde9b331827a6353e52a501de2e6870076e085f0daba331017a8e"
+    },
+    {
+      "path": "apps/api/src/modules/development-friend.ts",
+      "sha256": "88a1b6a18e759ef78cc8b00c87e1d02512aeae67d086ed3cc10ed29dd9cdbd67"
+    },
+    {
+      "path": "apps/api/src/modules/domain.ts",
+      "sha256": "c55be41540d8f16b46a2a7e8037b2190640ec649e4203b2c446f119cbf677329"
+    },
+    {
+      "path": "apps/api/src/modules/repository.ts",
+      "sha256": "eaa95e0ddefba047d61ae89a0486340362ab5cb5590a4cfceb6da9ab67d8554c"
+    },
+    {
+      "path": "apps/api/src/modules/routes.ts",
+      "sha256": "3f0d5473d817805c7ed6ac9097ca2f37036ee901657d4bfecbf737effe29b72c"
+    },
+    {
+      "path": "apps/api/src/prototype-server.ts",
+      "sha256": "c0d6c958efe4e11e128d4043b583828dfd43d7e3bb844ab0a961cc26213b02dd"
+    },
+    {
+      "path": "apps/api/src/provision-db.ts",
+      "sha256": "28cfac71a0464d7b6b25a88070332b39d87a190b406611dbf5fa5d43fc69db45"
+    },
+    {
+      "path": "apps/api/src/server.ts",
+      "sha256": "735c28d904602b2c81bd00dfac0e331b4612cf654cee264a682ac602b933ad8a"
+    },
+    {
+      "path": "apps/api/src/services/content/daily-program.ts",
+      "sha256": "82eb63f6b197da044446852318f555bd4f27d4b7a372f064e5ca1665dc038bc8"
+    },
+    {
+      "path": "apps/api/src/services/content/fixture.ts",
+      "sha256": "264b60ab08653151e4b56938ef407db03ad19a32dc0ce441b6a5ab313fd45e69"
+    },
+    {
+      "path": "apps/api/src/services/content/generated.ts",
+      "sha256": "b9b3d954b6bd0c3b1a22b1cb7134a5960071636e4049bee0de0f84253acdd9dd"
+    },
+    {
+      "path": "apps/api/src/services/content/remote.ts",
+      "sha256": "7c0041b9a99f8b23f13ae3bb0811c0dc00a8389133c86e83b22c1e308a7e3182"
+    },
+    {
+      "path": "apps/api/src/services/demo/personal.ts",
+      "sha256": "fc59db696e1ed7bb0f925ef040819b2b43963ac432493588be49c3567356d901"
+    },
+    {
+      "path": "apps/api/src/services/demo/register.ts",
+      "sha256": "48c63d24ec83010187d86ffffebdc109cd5ec5f47946361c7e464eb4db6bd774"
+    },
+    {
+      "path": "apps/api/src/services/demo/repository.ts",
+      "sha256": "946b656a384d818744ce1016c381374c1972697d4255dc8836b28d56b00ab381"
+    },
+    {
+      "path": "apps/api/src/services/llm/gemini.ts",
+      "sha256": "92b29ba4dc308d2f97b473a3523e0f4eac37471832c286c79857914f42961ad3"
+    },
+    {
+      "path": "apps/api/src/services/llm/prompts.ts",
+      "sha256": "6e76c82eaabe3bfedf66b3485c2619662d4d91247dab70cad6bf320de27ac99c"
+    },
+    {
+      "path": "apps/api/src/services/llm/usage.ts",
+      "sha256": "433208f107479e8219caf5cc311fe44415a31d5641f58c4e09a28b65d03f5a2d"
+    },
+    {
+      "path": "apps/api/src/services/toss/anonymous.ts",
+      "sha256": "72039762031596827a81bd65aee3c8cecb7277e36d39babedab93a3411177bc6"
+    },
+    {
+      "path": "apps/api/src/services/toss/auth.ts",
+      "sha256": "441ba79c49458a8bc41620d1074683691f32fbb50daee388902112f0277bf22b"
+    },
+    {
+      "path": "apps/api/src/services/toss/client.ts",
+      "sha256": "e0d50f09d59171f96a87bdbe085b0f6b5e9c1cfbcc4d9397983971a8897077cc"
+    },
+    {
+      "path": "apps/api/test/ai.test.ts",
+      "sha256": "d60a2b843a59b426893f0e3e7edacde9f2feb6ae9b8d553f361e6510b85ce33e"
+    },
+    {
+      "path": "apps/api/test/anonymous-db.test.ts",
+      "sha256": "bdfd1cbb28c6bc10f51b2f0984e9fb461327a89f9bba3463cffcbaadf7f562d7"
+    },
+    {
+      "path": "apps/api/test/anonymous.test.ts",
+      "sha256": "0a49ea068adbffe6462adbe84096f5140865331d06d32f436bca830d45428ec4"
+    },
+    {
+      "path": "apps/api/test/content-review.test.ts",
+      "sha256": "727cd5337d99d8ccbf99407921c2a121dd248078ffe3a1aaf87db96a43df1d29"
+    },
+    {
+      "path": "apps/api/test/demo-db.test.ts",
+      "sha256": "32ba1f50890f9312ec82054c8d9341b702128c4299fc87941b70dd7d814663e6"
+    },
+    {
+      "path": "apps/api/test/demo.test.ts",
+      "sha256": "8da882588f0ced018895dd77d007e164f37f630ce2e37c1f4c454953903bd708"
+    },
+    {
+      "path": "apps/api/test/game-v3.test.ts",
+      "sha256": "f01a260635d90429109cab887da8aa4fb403935f33a382b4d0dfdcd3b4e57c12"
+    },
+    {
+      "path": "apps/api/test/integration.test.ts",
+      "sha256": "00a7901dbfec5f4c1beee4cc683741f3ca699f3ccdd4adb306531ab4453332d2"
+    },
+    {
+      "path": "apps/api/test/model-catalog.test.ts",
+      "sha256": "bb8895a8840c2a5135120f6184c15e4992b511afad9ec45245fd132e28c220b9"
+    },
+    {
+      "path": "apps/api/test/personal-db.test.ts",
+      "sha256": "9208d69e49387bf6546eee760c3c4583ba8a33c3fecae23517e1f415c5e801d2"
+    },
+    {
+      "path": "apps/api/test/profile.test.ts",
+      "sha256": "58138c7e88d66d8d389f2a7af79c5e34615e8ef9613094620c1be27be32810aa"
+    },
+    {
+      "path": "apps/api/test/prototype-db.test.ts",
+      "sha256": "7d9ebeee6b2eb9757f7ddb8bda61dce887d8742ded66a148f48e9969997cae85"
+    },
+    {
+      "path": "apps/api/test/prototype.test.ts",
+      "sha256": "1de6f1bdbefa4081347d6027744e910531be9299fae53a6c96cf3cb2e1039ac5"
+    },
+    {
+      "path": "apps/api/test/read-path.test.ts",
+      "sha256": "b236f20a7b1cf3f8800100056ff8328866b2cd352bc159b1aa5c236f95ea5468"
+    },
+    {
+      "path": "apps/api/test/remote-content.test.ts",
+      "sha256": "1e26793f2516b6f83f845e6288bcb2f29bb39ee1493e2a116997cb4248bed1fc"
+    },
+    {
+      "path": "apps/api/test/unit.test.ts",
+      "sha256": "553d103ab74336f097749a0a9092a2235ac1b1de089b40d482c2c7a62f9dcbac"
+    },
+    {
+      "path": "apps/api/test/web-demo-closed.test.ts",
+      "sha256": "4bb167c4400cb25b96bd4ed8ce0fc40491d875453172397b5d79385ed06c958e"
+    },
+    {
+      "path": "apps/api/tsconfig.json",
+      "sha256": "2e0c8273e419e5d4431b2a4deee4e5dbc7a6ed3926268de7d9124397304944f3"
+    },
+    {
+      "path": "apps/miniapp/.env.example",
+      "sha256": "44cd5858638ac8b0147cfcdebebeba7d846dd5226724cc3f7c05b0bb884746bb"
+    },
+    {
+      "path": "apps/miniapp/apps-in-toss.config.ts",
+      "sha256": "a717c1fe5084a8b6c8368b98f0fee94c8f38a943408fa92407c9af10f7d51f22"
+    },
+    {
+      "path": "apps/miniapp/index.html",
+      "sha256": "bc40d358576df9673b14a82b95cd790dd4bd013ce218aec0480b206cb78bd64f"
+    },
+    {
+      "path": "apps/miniapp/package.json",
+      "sha256": "d8b0bbbf7ceffde010ad47cac27ae8341422a5482fd8d8ad0ebd023e338e5545"
+    },
+    {
+      "path": "apps/miniapp/public/content/apple-tree.svg",
+      "sha256": "cb5f964e2f32e991f734b680b40ca90839c84738623936320c51f5c42f496fa9"
+    },
+    {
+      "path": "apps/miniapp/public/content/bear.svg",
+      "sha256": "46a9cd2a9442ea00a00934c5456d4a17eff40e35051daa45b6ee854fc890b1b8"
+    },
+    {
+      "path": "apps/miniapp/public/content/bench.svg",
+      "sha256": "f9acd079e52b0305b7a85bb15c7b6efadbe7c7c045f8f10e82e09f98fe1b7f4b"
+    },
+    {
+      "path": "apps/miniapp/public/content/bird-house.svg",
+      "sha256": "7eb48da15ec75bc8ca0957dc22b1f3751191bfb263afcc98ac6632360ef66015"
+    },
+    {
+      "path": "apps/miniapp/public/content/brand/aimi-logo-dark-transparent.png",
+      "sha256": "5e25a38c67818e9bba82084d2c06375242cc24ce98b3459d5937bf7f1fe80cbc"
+    },
+    {
+      "path": "apps/miniapp/public/content/bunny.svg",
+      "sha256": "4dd7edd975320a25e75c1f001e3c61a20d645ed3233458f1ad6dd36bd914f82d"
+    },
+    {
+      "path": "apps/miniapp/public/content/carrot-bed.svg",
+      "sha256": "576a4fee8cf94fa26c892b5f1c0bfd13f66f3fe044816f51f6b1f8776928a7a0"
+    },
+    {
+      "path": "apps/miniapp/public/content/cat.svg",
+      "sha256": "edc0fe86192584da8ffb49ffc2a32789f1817d7547685561d4d5829b4dbab9e2"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-01.png",
+      "sha256": "a1601d16ebaa55cc04d7e426dcb582600b98117596d840ca3c8ee98b17544805"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-02.png",
+      "sha256": "4c5b3ff98c191bda17cb2621af35544a32fdad2d649753963244a95b74abaae1"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-03.png",
+      "sha256": "a2d8ab44b18d96668f7c1e263b63429fe38d97b52b300ba040e95e1e77ce4e35"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-04.png",
+      "sha256": "d9d7bbdc02b9a7627d9fd69bffb0591b9c4ea89210297f3205fca1bb78f9ee5b"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-05.png",
+      "sha256": "126430657c33f3952659e996e1bd7b2a479d226add20e63c81dccd5bd464dd50"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-06.png",
+      "sha256": "166371d6c2fe7205f403a2db85fef001718d3865e64edd49ff67a5359073406d"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-07.png",
+      "sha256": "cb91f70d8b00e87db59d14a684b592e096b3b84c23176322b79afb292085520b"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-08.png",
+      "sha256": "fb3f82ce969d1d713e0f57e34944e4774d86f2ee5d3933f82ab5ed2516529f3f"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-09.png",
+      "sha256": "860713a4351d48e6dec635b66eed17eee76d20051fb91d46000fc1236be26ee3"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges/generated-10d-v2/day-10.png",
+      "sha256": "33dcd104ef5fee87158cffde64935c6590c79b36eade3d0bce9e294dd36c95ee"
+    },
+    {
+      "path": "apps/miniapp/public/content/challenges.svg",
+      "sha256": "9bff79cabe9d6d2db70526b32a1bb7487c913580cfa674740847c90617b9c8bd"
+    },
+    {
+      "path": "apps/miniapp/public/content/cherry-tree.svg",
+      "sha256": "4ab707fa7316f9a30e0af3d5209818f7bc8cb15063c7c7c7e3bc555a543ee3c1"
+    },
+    {
+      "path": "apps/miniapp/public/content/chick.svg",
+      "sha256": "821278397b705f40d7c09650b10ad9b94f9187806e552b3be88909ffc4cb642e"
+    },
+    {
+      "path": "apps/miniapp/public/content/cloud.svg",
+      "sha256": "d43a402204dc8cb42ef28c0d78717ab5b5e83f3306570d972f2f316571e1fd8e"
+    },
+    {
+      "path": "apps/miniapp/public/content/duck.svg",
+      "sha256": "90ed11f34aeda51554dce8d5bd5c212a16e28e1ff3e880194a70869a6b1eae54"
+    },
+    {
+      "path": "apps/miniapp/public/content/fence.svg",
+      "sha256": "0a0060378f4f5ccb3da88bfe7ed17ce62ee25847ad35cb26a5f1644ebe234563"
+    },
+    {
+      "path": "apps/miniapp/public/content/flower.svg",
+      "sha256": "7576f29c69d9319dc898698f30692381296d31883c35d680ddda7a56c63b3ec6"
+    },
+    {
+      "path": "apps/miniapp/public/content/fox.svg",
+      "sha256": "b26f3e987ee99f40505c988e91fac00ad16f36172d241eaad0971d4bb9aa1ed8"
+    },
+    {
+      "path": "apps/miniapp/public/content/frog.svg",
+      "sha256": "55c6c7e60350f0ba8bb082de966b05a24ca4a022d769610a666450f63092bbee"
+    },
+    {
+      "path": "apps/miniapp/public/content/game-previews/crossing.svg",
+      "sha256": "6e8ee6b7c4e63a1d5769990ea25af24808e8b746fefe59b7e18535c09568aefe"
+    },
+    {
+      "path": "apps/miniapp/public/content/game-previews/dino.svg",
+      "sha256": "66f21ea6c81ddbe1f67ad9d07c1e85237c71cfe1476581cb57cecf1b8b5b8fc3"
+    },
+    {
+      "path": "apps/miniapp/public/content/game-previews/runner.svg",
+      "sha256": "38221f150fe303511944b595a26d63b236783933691e066c162e9ab99dd0191c"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/apple-tree.svg",
+      "sha256": "d9e0ecf5f0f810b6d0ba73f9521d9d42c2bc68b619e590496a77cdca755b5ffd"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/bench.svg",
+      "sha256": "59dae04fc4f26b5006c608599fe2cf88e8a92125be3ef79d27210c233b340e86"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/bird-house.svg",
+      "sha256": "927de7cf3c99fb6246ac388c1fc45a5d44b8e5da210aaaf22b2aa2957d94711e"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/carrot-bed.svg",
+      "sha256": "83c9dc60f273ec8e597d179fd93e2335e49d5349264f231a777e21deef12cfc3"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/cherry-tree.svg",
+      "sha256": "2bc0a9fa30cfb12cbc43e30e0ed6d193b4c3bd801bdf929cbb66d7fd1cc50831"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/fence.svg",
+      "sha256": "7c84fa6a5549114983d1e62b04d511d0541fc52c7a0e595da72a23c5c7ccdfcd"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/flower.svg",
+      "sha256": "dbbfccb281d22bc8cfe611b79e44be6f9fddc59e0da2055be86ffd0b836143d4"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/garden-fountain.svg",
+      "sha256": "9d4d54c1ca876cb17d35b52e072cf6c91ed431ab5a3c2f76fabf8d6b08a90e72"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/garden-lamp.svg",
+      "sha256": "3f70625fffba13ec5dbe05492e4618a2e67864553669395fb7fd5075e834a288"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/garden-rocks.svg",
+      "sha256": "2febea663996601d1f686fe070d100b1bba7f0ac15a2eac97761dca8c0b43006"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/garden-well.svg",
+      "sha256": "bb46ff23d5ee314b080aaade482c20e3a78ab402ff1b7a49c8e1ca50dfa6e93d"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/greenhouse.svg",
+      "sha256": "7918b9591acc078cdcb5463f6f4b8cc96384cb04591bf774a04dd1a5b0e2fccc"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/hammock.svg",
+      "sha256": "869b8c4dafcb1c9e9fe2fa64bb84b4338a5fc52f379aa0d0c016b56d43f65981"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/harvest-basket.svg",
+      "sha256": "5930f264600cdb040e0fc31fa06102aba8f28735d97024d2f530fee48dde3907"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/hay-bale.svg",
+      "sha256": "cbb8268cc3738adabddddb43a5be2337987eaf467641a69139f6fdb2f59cb544"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/herb-crate.svg",
+      "sha256": "9f5d5360f6bebffc6dc64fcf7e63d8be43b4a8c300ad50bdaef6d76f2bad5f0a"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/lemon-tree.svg",
+      "sha256": "dc3936d76bf8c05dee2bac66477e3bd85f4f97a06ab1fe5bfdc7b25dee8c29dc"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/little-pond.svg",
+      "sha256": "b0717d9bbb9e2c1e18952c143654c0a201d927d821fb8b9bd86af35737ce304b"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/milk-can.svg",
+      "sha256": "853ea190af1e9de7e1c9f82cac9c5b58dde71bc9193b7d92e854adbb777f791c"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/mushroom-house.svg",
+      "sha256": "740bfc3e2300e2eb4de1c1dae2e1007e44541495e7fef97b87ca1211a971f6e2"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/mushroom-patch.svg",
+      "sha256": "16b55e27d7f0d5fdaa964c1fff382b8f7b76c768b0b48b70cde1b3393c3feb21"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/parasol-table.svg",
+      "sha256": "f8a5acbf072648dcc878041e4e0a1083f556f87bff571df1e0e6fbb5060b374f"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/picnic-mat.svg",
+      "sha256": "9045bfe1ca197b328479e8103eff429205c454c0ff8cbb749ccfac5d070c2767"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/plant.svg",
+      "sha256": "6107e3e00d7db7701327ef3d5da78db607d790b12fbe32135ec76eb81ee63c1c"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/pumpkin-bed.svg",
+      "sha256": "9278bb71c617b54e64808f57ec32e8eaa93a5ffd586d8f7712bb2e9086f59229"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/round-shrub.svg",
+      "sha256": "02951b074cbe29769ecb1ff7f4b7f574129cea744a112cd9c82a54f134c5fbe3"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/strawberry-bed.svg",
+      "sha256": "ded5e6e59e3cd85a65a93809f92cae2478b03cf097870638f1caa86625c4eafa"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/tomato-trellis.svg",
+      "sha256": "c13e50c50e374d86780173ed9780af5a771e475ad587b984dffb206b1f57e20c"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/watering-can.svg",
+      "sha256": "b69035ad34aac774cd8df7c89a1291b9dfe402e7d51b1701e15b19c9b31ce21f"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/weather-vane.svg",
+      "sha256": "28fe4c7b677c606c2f4583cd893269876945168d366f39e355818fdab66fc5f5"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/wheelbarrow.svg",
+      "sha256": "eb2ac74813c35656ed0b39a2401c9332a4c10a9946480aad567f596165b8d878"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/windmill.svg",
+      "sha256": "d6c9ad6c690c9f9c23af33d6b1044b0382133778753afbf9899712f7a04c1209"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/wood-bridge.svg",
+      "sha256": "dd86c43cf629f68408c2e7e51c43f1987351ad2f77d60d494827c8580cb5f3e1"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden/wood-sign.svg",
+      "sha256": "da18d6c7913b8538ec0c7829d390ad419b6f7020606bda8e5b60ae6699e956ae"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden-fountain.svg",
+      "sha256": "27f70417e9278dcadc98dd405a047a41631b14ceeaa2c40152f3bd61cc9f8041"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden-lamp.svg",
+      "sha256": "c526e58662fc281c9b86e51fda5ce738c246c5031213034e62b966d12b657cc6"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden-rocks.svg",
+      "sha256": "1cbd9924a0a1262add42cbc8c604def488a4c20e3b64de543741d622fdca4d20"
+    },
+    {
+      "path": "apps/miniapp/public/content/garden-well.svg",
+      "sha256": "2d03f2faec7ec7af1841f388dd74e775266e0a7c2a673eedd42c0951dbc0f32b"
+    },
+    {
+      "path": "apps/miniapp/public/content/greenhouse.svg",
+      "sha256": "5166421307dea827ca7c4981bbd8a0dee5f23517b13db7cf49aa8d65baff2671"
+    },
+    {
+      "path": "apps/miniapp/public/content/hammock.svg",
+      "sha256": "2fc9c45ee494c899679f47b82cc65ec1d5038ce571bafe95edf285634e3cc591"
+    },
+    {
+      "path": "apps/miniapp/public/content/hamster.svg",
+      "sha256": "99d98e85f3e525ba118c185052390e8174bb4062b77c97cb3c9f9f2f679bfbbb"
+    },
+    {
+      "path": "apps/miniapp/public/content/harvest-basket.svg",
+      "sha256": "fc1c977f91127aa3dc650fd758173d75b7100f3bf2d4dcdfb5cdfccbcad6f45a"
+    },
+    {
+      "path": "apps/miniapp/public/content/hay-bale.svg",
+      "sha256": "e5cd1ff64e67a7bd2f1807f153ef7adcf15c8a2b1c20c81def4f65d11b688110"
+    },
+    {
+      "path": "apps/miniapp/public/content/hedgehog.svg",
+      "sha256": "b5f1484f0081beac7f5d1f0e082fafb147136d584cf3a2894fe94eecc9319566"
+    },
+    {
+      "path": "apps/miniapp/public/content/herb-crate.svg",
+      "sha256": "03df898620226467c846977e17a9171c9a08bdde2f0423f7a5f7a39d47f7fdd1"
+    },
+    {
+      "path": "apps/miniapp/public/content/lemon-tree.svg",
+      "sha256": "204fbd000ba54879ef0d4e531c50d20a4eeaa9d1c9d01a973afc3094c0ba02a9"
+    },
+    {
+      "path": "apps/miniapp/public/content/little-pond.svg",
+      "sha256": "33ff6f084e0553b7def5493234f5d5a7f8072451302b92237cddaaed3ce6b452"
+    },
+    {
+      "path": "apps/miniapp/public/content/milk-can.svg",
+      "sha256": "533751cd25257bf74937d81d65a2da8676f02b9a8e4cdb0136f693463a0655ee"
+    },
+    {
+      "path": "apps/miniapp/public/content/mushroom-house.svg",
+      "sha256": "0f4fe1827d25727d74cba6cbfe24588d1ddd28e4d1dbbbf5ed38586c074ab33d"
+    },
+    {
+      "path": "apps/miniapp/public/content/mushroom-patch.svg",
+      "sha256": "18a56179bc26ea776506cfb74011dce424381a053d16a565604ae0da5132130a"
+    },
+    {
+      "path": "apps/miniapp/public/content/parasol-table.svg",
+      "sha256": "21a810ab267efa65f66eddf4688cc92776a987e94d48d802c3ae9898c20df9d7"
+    },
+    {
+      "path": "apps/miniapp/public/content/picnic-mat.svg",
+      "sha256": "f6a2cefa568546d98f981f2a53250b577a3323bfe79176129ce9861bf99611a0"
+    },
+    {
+      "path": "apps/miniapp/public/content/plant.svg",
+      "sha256": "a0e07cbcee5f79872d55c65e4c3d6886b9e6c6ca47256a82acca58c3ce1f229c"
+    },
+    {
+      "path": "apps/miniapp/public/content/pumpkin-bed.svg",
+      "sha256": "480344f4d6162b8985351d9adf28186e9710dfd8185b751aa1fb284fd6d246dd"
+    },
+    {
+      "path": "apps/miniapp/public/content/puppy.svg",
+      "sha256": "79207e5b995b3800e7cca53880612b44178bf52a2f3105bd583b18e2a3cdd1e1"
+    },
+    {
+      "path": "apps/miniapp/public/content/raccoon.svg",
+      "sha256": "c7af9b933895c07c8b99895f7ac7d1feb4970733b38a6c96a4df23e45518ca36"
+    },
+    {
+      "path": "apps/miniapp/public/content/round-shrub.svg",
+      "sha256": "41c3a8cef8dbc0114dd41dbe2dcea23d942ed557820f6a1fb66a864a6ae2a7cb"
+    },
+    {
+      "path": "apps/miniapp/public/content/seed.svg",
+      "sha256": "9680f7f99435aba491d557458dbea2af1a92bb67c869e75f1d9c5e2d6b30bb58"
+    },
+    {
+      "path": "apps/miniapp/public/content/squirrel.svg",
+      "sha256": "18878a6da53a27ff53a469b9fd1cbb4c15c73fe1adc4d97d3f84061e8e23b9a0"
+    },
+    {
+      "path": "apps/miniapp/public/content/strawberry-bed.svg",
+      "sha256": "1c9e0a742cc102dfc83465fe737a334d9bde741680f93a83970c0cc7eef6965e"
+    },
+    {
+      "path": "apps/miniapp/public/content/tomato-trellis.svg",
+      "sha256": "4444e409fabe67de05eb1d4d4e4bccb897f536638b7915e3a992823ef2464d2c"
+    },
+    {
+      "path": "apps/miniapp/public/content/watering-can.svg",
+      "sha256": "5745f9713526bf71c37fa689b1da7b836d5985417153ff6821c9bfe50bb6356d"
+    },
+    {
+      "path": "apps/miniapp/public/content/weather-vane.svg",
+      "sha256": "e5551cd887290c4fbc742579c8d28cd0cda97ceec7f4742aa809ec5ff874ccaa"
+    },
+    {
+      "path": "apps/miniapp/public/content/wheelbarrow.svg",
+      "sha256": "6ba5f8d48de9e9ca0bdec544c51d1a2f23c41ba1f98f39763e9ab5ca72f988ce"
+    },
+    {
+      "path": "apps/miniapp/public/content/windmill.svg",
+      "sha256": "de9223934929b6d9699f3057cbd0d8fa1d0e9459647ca276cd2b17e1be5fe13b"
+    },
+    {
+      "path": "apps/miniapp/public/content/wood-bridge.svg",
+      "sha256": "974473815e9326dc0b5db8588c5ec8f79ead4285d15a766f40de0156d9332c1d"
+    },
+    {
+      "path": "apps/miniapp/public/content/wood-sign.svg",
+      "sha256": "3a9442ad739df00dcdb9f1a7c022982dbbb9ff4213fb0e538b9c6556317cf052"
+    },
+    {
+      "path": "apps/miniapp/public/fonts/AIMI-Bold.woff2",
+      "sha256": "ab3fc81bd9c6961ba9800f55991a8a8867b6b0281ef49b9b9e4327e55f6ce4b1"
+    },
+    {
+      "path": "apps/miniapp/public/fonts/AIMI-Regular.woff2",
+      "sha256": "004edc1721f624a10801bd934e484a73c7e51a16fda07243709b40465a29d2c9"
+    },
+    {
+      "path": "apps/miniapp/public/fonts/OFL.txt",
+      "sha256": "fcac737e761ec63dbfbdce11030a1780161920d80315edba9c8beff1c2bac5a2"
+    },
+    {
+      "path": "apps/miniapp/public/fonts/README.txt",
+      "sha256": "830297da633b75077439c5e12072d88b5194b46739fe0ef0ce86f64d5fd9fd93"
+    },
+    {
+      "path": "apps/miniapp/src/app/App.tsx",
+      "sha256": "b37e618ab965e28b81cc2bc6ffb9faad4f275c2d6387511a6c3a31955dd526c2"
+    },
+    {
+      "path": "apps/miniapp/src/app/context.tsx",
+      "sha256": "7a05bdd7811de1a850b9bdfe50dad6f7a39c7e4be9949afb67a5b08da228ce0e"
+    },
+    {
+      "path": "apps/miniapp/src/app/navigation.ts",
+      "sha256": "f03cf5f356d78fd05f7418e098cf7b6c4334a3ddf9b800c5ba20fde464ee461c"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/attempt-results.tsx",
+      "sha256": "f8964569e8b509cdfdc27e01efe0db7c2868bf2fbe0138c39ca0aaacd3cf3ea3"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/content/learning-notes-10d.json",
+      "sha256": "c6582420eef315355d98e82f6eb4dcab513e6e8e071a3b1ef5b32254baf4e5f2"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/learning-notes.ts",
+      "sha256": "955927e0362245e706ca3f4f850f9064880a9ca945e84999ea1972247ccfe5e8"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/model-attribution.tsx",
+      "sha256": "4e54e4069776adec64424d1a724eb5af9dafee75a6a45291e853728b129ac634"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/reward-popup.tsx",
+      "sha256": "d81fe09539a7d39c94216902618db1879ea3b5448597d1db7859432bc0357644"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/screens.tsx",
+      "sha256": "eb74a22c3db743bf04d0a13a13d618138c555eea274db9106ac417b4f05f83a9"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/sentence-card.tsx",
+      "sha256": "66242fd5a75504c2c24a13b41f3d14062b1fec5fdd5db4839ecb8e4a2c9a02b0"
+    },
+    {
+      "path": "apps/miniapp/src/features/challenge/view-state.ts",
+      "sha256": "85ad67cc9e597ac076f10b52f140d9714b5f0957ae41a7b9df3f39f8d988558f"
+    },
+    {
+      "path": "apps/miniapp/src/features/demo/test-controls.tsx",
+      "sha256": "4a655c07f27207c63bff2f4cda4bf44944d853c1e74c5405d6d2003594333895"
+    },
+    {
+      "path": "apps/miniapp/src/features/demo/web-account-entry.tsx",
+      "sha256": "a0a91c441864fc6ff8a9f020d659ed760c92f36174a34062dd7fb503d188be4b"
+    },
+    {
+      "path": "apps/miniapp/src/features/garden/screens.tsx",
+      "sha256": "66da6dc4bc99b4ee765522ae40c004479158366077b6d40fd31f2927fda3886c"
+    },
+    {
+      "path": "apps/miniapp/src/features/home/screens.tsx",
+      "sha256": "d5b7ac07198ba88ba3d0a63725199f240af38de8ae60cfa009fa2bf3c86cd542"
+    },
+    {
+      "path": "apps/miniapp/src/features/legal/privacy.tsx",
+      "sha256": "058f50a1ff361298ec415b01b5dd815d33bb5d8e7e0c75ad59cecacf9949fe74"
+    },
+    {
+      "path": "apps/miniapp/src/features/optimizer/aa-score-chart.tsx",
+      "sha256": "7fe8a11887372c62d0e28d47f47826670b97dcb7401c2c8c8d7a8bf7d130165d"
+    },
+    {
+      "path": "apps/miniapp/src/features/optimizer/model-copy.ts",
+      "sha256": "59300405f2c772c4645fb15ce6287d1b8b8eefa0e6105b2c3ec5a9a179442f2a"
+    },
+    {
+      "path": "apps/miniapp/src/features/optimizer/model-facts.tsx",
+      "sha256": "c9ebafd935e5b72a5449289112c1fdfac23e124d3a7f24ff641ba7e5277b3e54"
+    },
+    {
+      "path": "apps/miniapp/src/features/optimizer/screens.tsx",
+      "sha256": "a399ddd96e415dcb1a15ab339f6998255d74bc49953114f462579f4bb2014e2c"
+    },
+    {
+      "path": "apps/miniapp/src/features/profile/screens.tsx",
+      "sha256": "1c136752a64c89d318a27c765bb902c2f8a68b1a8823a576c845e369ceee2cd9"
+    },
+    {
+      "path": "apps/miniapp/src/games/shared/GameResult.tsx",
+      "sha256": "24b81e8bfc9ba5380424b0423b4cd00e496f4530b91f55a93cd5ebc4dbc0f598"
+    },
+    {
+      "path": "apps/miniapp/src/games/shared/GameScreen.tsx",
+      "sha256": "78c98fe34d32f6256addad23c4b1148617cd85082c6d8d1635a6d218e7cc65f6"
+    },
+    {
+      "path": "apps/miniapp/src/games/shared/renderer.ts",
+      "sha256": "4e7413a5eae98fe7ec82bf7ce88ad7db0f852c483d6426138e939af15f6df4fc"
+    },
+    {
+      "path": "apps/miniapp/src/layout.css",
+      "sha256": "7b8cb589e1b873615af7bed30431ad7f8611470130f94d8004aa00effc7ac862"
+    },
+    {
+      "path": "apps/miniapp/src/lib/api/catalog.ts",
+      "sha256": "ef795d9b6ffb02d4741d64ceb20506a3d22dbb4843b6de2119c61a0a2854bb69"
+    },
+    {
+      "path": "apps/miniapp/src/lib/api/client.ts",
+      "sha256": "1abddfc73988d62a9fc75db9199d776335ff0a07756b5ef55c0ec7d520ed78e1"
+    },
+    {
+      "path": "apps/miniapp/src/lib/api/session-recovery.ts",
+      "sha256": "abeefb5db247841e5148455027ca2256b4c0a618bb2b74e275af5846320b8c2b"
+    },
+    {
+      "path": "apps/miniapp/src/lib/demo.ts",
+      "sha256": "fbf88b149a69ed128a703d8c7ff05f64588d0a2d7a2f126eb9ed32744df6e58d"
+    },
+    {
+      "path": "apps/miniapp/src/lib/page-scroll.ts",
+      "sha256": "bd67f06e2d3e5feaee86d3f6b12721ef7f0946ebfa034e07b89bb3e4f8b78290"
+    },
+    {
+      "path": "apps/miniapp/src/lib/runtime.ts",
+      "sha256": "109f80326804046387176994538be54ad193bc079a165eb29038bbf9a26fbabd"
+    },
+    {
+      "path": "apps/miniapp/src/lib/safe-area-policy.ts",
+      "sha256": "1f6da40f1c46b142c862d0ea6779398037659d0fdac5e9997e941d1e7ff98f42"
+    },
+    {
+      "path": "apps/miniapp/src/lib/safe-area.ts",
+      "sha256": "38bb5106d28b06c786e9b9b09518700c67a2d4071c1b7b15561aef299d104359"
+    },
+    {
+      "path": "apps/miniapp/src/lib/scale-lock.ts",
+      "sha256": "6d75a6558f6854208c5dca736e7f44990c3b88c55fabc03cc182ac02f2103ddb"
+    },
+    {
+      "path": "apps/miniapp/src/lib/scale-policy.ts",
+      "sha256": "763ef9cc3529a377970b7a374dfe889c9f6ff0f9d15d3401fcfed44a747f0068"
+    },
+    {
+      "path": "apps/miniapp/src/lib/toss/bridge.ts",
+      "sha256": "6c4798d7aeff7feade8fba9e9151aa71d2ece3c82fcda8b2c22ace765ff7823d"
+    },
+    {
+      "path": "apps/miniapp/src/main.tsx",
+      "sha256": "17336d70934dad282b2027ba0a2c854e9b4f5653936558c063eb1580bcb13ba4"
+    },
+    {
+      "path": "apps/miniapp/src/styles.css",
+      "sha256": "7753248824e7425749b2e9ba90c5c546d2efab85aa7cc397a2c1932f7d9ab704"
+    },
+    {
+      "path": "apps/miniapp/src/tokens.css",
+      "sha256": "7c43b9d37d9492f9ca4434c31c42278c23df8e780084e3d5f2c41a0222e7da3e"
+    },
+    {
+      "path": "apps/miniapp/src/ui/primitives/index.tsx",
+      "sha256": "1b65f910d4dd9d3eef12b8293224733e9c1a65332cfa69afa2c05f0e2383294e"
+    },
+    {
+      "path": "apps/miniapp/src/ui/toss-provider.tsx",
+      "sha256": "1ff8d5abc4a61d171586579f1a7d1c90c6e5291bebd23208e6ce39af6405eceb"
+    },
+    {
+      "path": "apps/miniapp/src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "apps/miniapp/tsconfig.json",
+      "sha256": "78192286d9e3e07993bcee09578d26551c8d683bde8c60b55e1ce7e216b6952e"
+    },
+    {
+      "path": "apps/miniapp/vite.config.ts",
+      "sha256": "ed2d02d8bc022e2cdf3207c7d155bab8c1789a43d73eda640ce8f69e6dac91e9"
+    },
+    {
+      "path": "content/catalog/image-candidates-45.json",
+      "sha256": "a7049e3276da2dec225f3c2540b092b0eee1671904a6a33e098d6f1d24a2e3da"
+    },
+    {
+      "path": "content/catalog/model-availability.json",
+      "sha256": "430b3779821f36658ec1f30f141b2d198a5e4407a8b90c72179c7b2ee5ab05b6"
+    },
+    {
+      "path": "content/catalog/model-selection-156.json",
+      "sha256": "3f0a056a5ed2f6e2f61c1d11ee923e6f2e5d032d6afa56dd50878fefcf18aebc"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-01/manifest.private.json",
+      "sha256": "9f8775839a7ae4ad858b4d0ac7b5d920567f8a459a99b08fd8cede98e8e6f59f"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-02/manifest.private.json",
+      "sha256": "5a847a5f01b5ae9dee8bf23c1f4a1f24a56151273a90c3b6ab897eeef6da59e0"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-03/manifest.private.json",
+      "sha256": "93c357dd43aba2de885e705c2b793d00d10f93d1d0fa7f6a04d84edb3d414f92"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-04/manifest.private.json",
+      "sha256": "55e807ee274a2ae3e6a3e7163d5dde655d68b307cf237166e6b127c77e7faf1f"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-05/manifest.private.json",
+      "sha256": "c4327cc305a6882700deaa8d93df3fe5af6a44246bab721a7f5da8672f016be5"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-06/manifest.private.json",
+      "sha256": "ef753ed5db615b4c134fcff66bf26a420e97198ec02e5d2e42422c2df4fa8abe"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-07/manifest.private.json",
+      "sha256": "6fb1ac6287e4fb195aa27f0c805991bd95faa36840266c31671d6153769fcdd7"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-08/manifest.private.json",
+      "sha256": "c819756eb6686cf658154426b21072445f98ebecd518b46193cf273984dc8bcc"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-09/manifest.private.json",
+      "sha256": "36a1bb1c01908eceda8442bc6a2baba136e4e3edcc00e0b66d22467e2b2f74e6"
+    },
+    {
+      "path": "content/challenges/generated-10d-v2/day-10/manifest.private.json",
+      "sha256": "53f45929aca4608b2d23f2f3028ae7d820dd6bf0ddb75fa79412c3843bbfa260"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-01/manifest.private.json",
+      "sha256": "d2c540d35bace0e5ba67b6fa89d36fbf5599e324f43129a3f06d6b0621d57e64"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-01/preview.public.json",
+      "sha256": "f522e5c9d4f28d8d666afbd898cebd708b3cb22d54f975e3996685a5f5346cca"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-01/review.json",
+      "sha256": "e9ca74850d77701a56dac7c03c24f27c1d5afbf67dde7a0f404a0d8f7e4f6566"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-02/manifest.private.json",
+      "sha256": "af32abfdc462e949a51ad9286ec88c137c6ebc64cc0e1bc78b7fa9c53f092bd5"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-02/preview.public.json",
+      "sha256": "8072964dfb61f39a9c47b87b7eb810bfb80be68247efc4fcc9babbfa0279b261"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-02/review.json",
+      "sha256": "292080b3bcb6b548bba95a35c0d841148103e2ececb6c6de96e91845eb63a25c"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-03/manifest.private.json",
+      "sha256": "2a6f29eaa46c5579a8a45948d037e0eaadf750ee437aa6f38859d9844c6a2549"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-03/preview.public.json",
+      "sha256": "c3d12c19cb5425314dac6076dbe084ceeb8bc7fdced0daac01e1399a79e914d2"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-03/review.json",
+      "sha256": "f42ebd12ef74aa1112636001599358bfc73d92c39712935bee01c4b55f4f175c"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-04/manifest.private.json",
+      "sha256": "31474406f0d12a4f6e7f6af09b893ef1d3770424056f292923d5e93c9835eef6"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-04/preview.public.json",
+      "sha256": "1a733ccdf715250d743f410ceb37f24b82a1e3ff284ebe25b28c7db638dcd36c"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-04/review.json",
+      "sha256": "8ed4bac0a1959184872bf5e94488baa986fafe62c7c57d7968abbeffdff9542a"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-05/manifest.private.json",
+      "sha256": "4fe65b4e98b41edae4eae57725c87025af6bbe4de70c7a14e82ae881bc29e5ba"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-05/preview.public.json",
+      "sha256": "3b9c8c5db5cbb8da478fc5dc641e8dad94fcf1f08642e1693d28e013d4764972"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-05/review.json",
+      "sha256": "17c188b38d595a38eb902c8b3053b53102e21275ec769ccaf8b51052f8102240"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-06/manifest.private.json",
+      "sha256": "908890d595e5ee8b13ff0948ed0b5c09a0eda098c17d31d02b0d5f1b32f0bb85"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-06/preview.public.json",
+      "sha256": "c084d00bc8d04217fe86d3a91e36ae5b2bad51ec000bbcad351a94634e032154"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-06/review.json",
+      "sha256": "2170b2b43c4bb7a9be583b7d4a3eb137e0085983376698dac8225d11db1de08c"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-07/manifest.private.json",
+      "sha256": "21f2950a7d7a098e71949439372e03d3edd86fe3a6ad280b832dc0ebbed82725"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-07/preview.public.json",
+      "sha256": "82a1cb730f90718f622a7646f23745c6e45231899ca2a1e8c0ecf6b0764b284e"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-07/review.json",
+      "sha256": "286a36c70a452de031b09435500e2d5100ff44b029a99b58242c4e2fdc0ac73a"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-08/manifest.private.json",
+      "sha256": "7d9f28d939dd7da34fbff577e77db3c737df37cd9fae2c27452f66c5c7625564"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-08/preview.public.json",
+      "sha256": "1679d3d5440bc8d70db1988e94dd647f3f51706a77ea4173457aca6706339d34"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-08/review.json",
+      "sha256": "0a08dac258016a49bac439b8e90a58d9f44a1325ea0e499f76413d00032634f1"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-09/manifest.private.json",
+      "sha256": "eacd6b415f6f15b336a1a81fe2cdfe7e8a7f156e187a54b8810c9a205a44849c"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-09/preview.public.json",
+      "sha256": "e8d9feb121f06552da4e4e9a9fa861a2f5efc96b9321f67d2fadd676c22e8ddd"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-09/review.json",
+      "sha256": "076c17f60bd748e05809a4d617ef82061c65680807c6cc2eab1e7cfe463c6af8"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-10/manifest.private.json",
+      "sha256": "9b88e274e97ffa974acbda5f1de6a4cc24a33a27621e56069173e86529f79a50"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-10/preview.public.json",
+      "sha256": "c5801172f7a67474cafa481edb6c5d5ce1f240f0ba874f5746cf9288974dbf8b"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/day-10/review.json",
+      "sha256": "f41dc5232e48927cbe67906c21349b1b446d235878d142adb4a4861046095846"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/generation-evidence.json",
+      "sha256": "0cd7fd208591e0f91ba9398b5d583a1492af674bd91b4117c48ad0f4d5a607d8"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/review-summary.json",
+      "sha256": "19987330620540177f1586e3c2d461e2596367953d68d6c479262f4ef5119bae"
+    },
+    {
+      "path": "content/challenges/reviewed-10d-v3/sources.json",
+      "sha256": "1e7771996eef4c8f591383a7eb007953e7146544f0b98d6e97cd27ebb9cc05a6"
+    },
+    {
+      "path": "content/evals/recommendation-routing-v1.json",
+      "sha256": "a19ba9845eb3ed222bc39a2436474be1430a0d999c7902dd03c0867c1756b3b6"
+    },
+    {
+      "path": "content/fixtures/aa-public.json",
+      "sha256": "5f1646c05d85205650696483626b3df06812598186054bd3744fcf60b55d7535"
+    },
+    {
+      "path": "content/fixtures/models-media.json",
+      "sha256": "b4caedfb5b8e5d6cac6352bf8cf06dcd27cc9fde0181122d04d74a2e02844992"
+    },
+    {
+      "path": "content/fixtures/models.json",
+      "sha256": "06790a86f5c4df61037e178fe9f54f6e31aa8932c8d67dbd6071a062b3ad2dc5"
+    },
+    {
+      "path": "content/model-mappings.json",
+      "sha256": "ab5ab47bff31ef396857064c414cf5813de3420df55564fef4c017bfbe7c4f82"
+    },
+    {
+      "path": "content/policies/lifecycle-sources-v1.json",
+      "sha256": "3e6632db7dd09fb8ace42ca0e19f0e34824ec708949c56b53100402dee67286c"
+    },
+    {
+      "path": "content/policies/media-model-groups-v1.json",
+      "sha256": "c40271aee1702edf3eecd1b2c33039c3e26fb2a3fb090ba80c8389f4ec132d93"
+    },
+    {
+      "path": "content/policies/model-groups-v3.json",
+      "sha256": "a9dd9f11e9eac72b887cf318e1bca26d6023a390af95fd38ca8c41d445564a8c"
+    },
+    {
+      "path": "content/schedules/daily-program-v1.json",
+      "sha256": "e486ae9f7b568b833661c8b37462d85df1692abedd0382539ec4d730fe648998"
+    },
+    {
+      "path": "docs/reference/BACK_NAVIGATION_POLICY.md",
+      "sha256": "056b4041c7517bcb87e67f86b20046747a99170aa0ee71b9acb6f49173cc4779"
+    },
+    {
+      "path": "docs/reference/EP_ECONOMY_POLICY.md",
+      "sha256": "7a64fb81184c21175216bcdf09c5828a61735c53267148173d5b936e5a9a18a4"
+    },
+    {
+      "path": "docs/reference/GAME_SCORING_AND_REWARDS.md",
+      "sha256": "251ab0d71178a88b4e070738c19851c79f0a4ce5396d1a0f849a07f5b942e5fc"
+    },
+    {
+      "path": "docs/reference/GARDEN_FREE_PLACEMENT.md",
+      "sha256": "afe5cdabcaa4821bb099762a0c11f8bd0a6932b1bdcb3827156d427666e6f36d"
+    },
+    {
+      "path": "docs/reference/KEYWORD_PUZZLE_V4.md",
+      "sha256": "1d4fa2058700e162c00b2a1a213d8e9bc416ab97e61199330e123eff2c39b857"
+    },
+    {
+      "path": "docs/reference/MULTIMODAL_RECOMMENDATION.md",
+      "sha256": "4f3db47447669f6198d4bd090a10b82817618b7f7134095bcf99e2ee5bf3e816"
+    },
+    {
+      "path": "docs/reference/RECOMMENDATION_POLICY.md",
+      "sha256": "d68b7c8bf6ec11a76db9d5dd2f15e02e0e4ad606525ef41c3d154f319e5eb10b"
+    },
+    {
+      "path": "docs/reference/TOSS_ANONYMOUS_AUTH.md",
+      "sha256": "3571f94962cd22600d67c82fa55bb90e7dcf503aca164799e793fc89a4943d75"
+    },
+    {
+      "path": "docs/reference/UI_LAYOUT_AND_INTERACTION_RULES.md",
+      "sha256": "5835a023c13b7b9f529ddf8e0131c290f583c52bef03beb1fcc07b9d421d62ac"
+    },
+    {
+      "path": "output/model-audit/openrouter-current.json",
+      "sha256": "03a674aa4f07827a224c8d6ba4ca2657d4b424b70769dba4e53939652a48a7f6"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "b77f542f5b5bb851a3efaa326efbb8da1336f557f6c0e8cba75ce226ad5ee58d"
+    },
+    {
+      "path": "package.json",
+      "sha256": "9ac0b4a6532c6e83cd3bfeefd998a92b0ad3a7b5b144fb4ae182daccc8c20d6e"
+    },
+    {
+      "path": "packages/contracts/package.json",
+      "sha256": "16325e670756168ac462d7a2efea3ab2934723635ab229a0def52834288f2d61"
+    },
+    {
+      "path": "packages/contracts/src/ai/lifecycle.ts",
+      "sha256": "cc6b8c7cacd41c4a72e37757c29333703539d650fddd8ecf40fe5691617d8a66"
+    },
+    {
+      "path": "packages/contracts/src/ai/model-data.ts",
+      "sha256": "72a9c91320d8b02ac49b12fc29450b47f6dc73c67878b03b4c25639db5f4ec55"
+    },
+    {
+      "path": "packages/contracts/src/ai/output.ts",
+      "sha256": "ec107f4aa47c3bf3b4dd43bcd6eacaebe5b050f0c750da2053c0acd87a82090c"
+    },
+    {
+      "path": "packages/contracts/src/auth.ts",
+      "sha256": "35fc91833737a9379d58e37db07a3037b96651e09189654e7ffb6d283b92e848"
+    },
+    {
+      "path": "packages/contracts/src/content/asset-expansion.ts",
+      "sha256": "09b031c502a20f8cab9b7114bc0f8b7a77b7ff2f967e840d43ef32f2ab089912"
+    },
+    {
+      "path": "packages/contracts/src/content/puzzle-sentence.ts",
+      "sha256": "24cb48e460fc0328dc89148d767b2fc6b0b6b840f08a94bfb25e63fc63a14043"
+    },
+    {
+      "path": "packages/contracts/src/economy.ts",
+      "sha256": "34ff9bd964666e5eeb79abd8816880f6a05b0a98c7e055a2e75b240261ae4551"
+    },
+    {
+      "path": "packages/contracts/src/garden.ts",
+      "sha256": "46227927b55cd2726d0f1718691d60e361a50218291d131ffe8093f9df0f84c6"
+    },
+    {
+      "path": "packages/contracts/src/index.ts",
+      "sha256": "b853ee0671ad89e789b46a821e6401cf25f6c18baa93bdb6fc931a03b77d1a44"
+    },
+    {
+      "path": "packages/contracts/src/profile.ts",
+      "sha256": "4bbfd5ad7779491764c2f750e6356689cbc3d067b3a1d7a8d87e59fc7afe4153"
+    },
+    {
+      "path": "packages/contracts/src/prototype.ts",
+      "sha256": "e86236ef32e0463b06c34de33717db941d144cb5522bf2d9b860f02d622092a4"
+    },
+    {
+      "path": "packages/contracts/tsconfig.json",
+      "sha256": "2e0c8273e419e5d4431b2a4deee4e5dbc7a6ed3926268de7d9124397304944f3"
+    },
+    {
+      "path": "packages/game-core/package.json",
+      "sha256": "1ccc243143bbfb2dfeb054b323e902dba044684740e9dfa230d6fdb8abe9b787"
+    },
+    {
+      "path": "packages/game-core/src/index.ts",
+      "sha256": "19749f6bfdbf50d202dab20e55b5a129db58a32184a8b611590ab04049993a6a"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v1.ts",
+      "sha256": "27b090177ea622629d9a079fe4d30863ba08595397e478c1a5d368d328a568ae"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v10.ts",
+      "sha256": "0b4a4991a26db2e73f3e5d1f491010c2c5d201acb89ec9f6ecaa105547e2fcdb"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v11.ts",
+      "sha256": "d622b92733de546de644bda292c1656b3d4686e2cf8931a1c8a170f68719fa96"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v2.ts",
+      "sha256": "00c0c1e7752edbae724918202b59a67944718641fb2380780f644a5282c6a580"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v3.ts",
+      "sha256": "c8af48510359280c5ab10d821d345875e607f51c18d69142e57e63f9edf15269"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v4.ts",
+      "sha256": "112e56eb57829630ff732b7a9634c251a3b21b83a63ce8c342c300297b612301"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v5.ts",
+      "sha256": "09c655e9a3ba10719ae493e31dc723a3fa52a607c5562718e2484456ce550419"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v6.ts",
+      "sha256": "0ea848f95403019f16c69d1f871d7380ebac2bee58e080fb1519daa713d0d7b8"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v7.ts",
+      "sha256": "f1dd941b55955660a9b984ab135f16927c0967be996d0f10291e87c46f59014a"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v8.ts",
+      "sha256": "9b8812e75a055ede8e8c171622838b483f2f367fdf249fd4881ade7094ed92c2"
+    },
+    {
+      "path": "packages/game-core/src/legacy-v9.ts",
+      "sha256": "0c8831f7598b21f39689dff2deeaacc39e9f26c340ac84b965543ceed6501411"
+    },
+    {
+      "path": "packages/game-core/tsconfig.json",
+      "sha256": "2e0c8273e419e5d4431b2a4deee4e5dbc7a6ed3926268de7d9124397304944f3"
+    },
+    {
+      "path": "packages/recommender/package.json",
+      "sha256": "1760b9f3a8473fd72e628b31b8534aab0da8a37bbe1a6e36bbe6c1a5d4d2c21d"
+    },
+    {
+      "path": "packages/recommender/src/index.ts",
+      "sha256": "edcfaffce835bf8d86f50e61c3488a35173e97f839b6a5072ba11247cb23c87e"
+    },
+    {
+      "path": "packages/recommender/src/media.ts",
+      "sha256": "6d67a03e9009dcdee803ee23ebe87620561940526749d5478b7e1a10246d78a5"
+    },
+    {
+      "path": "packages/recommender/src/model-group-policy.ts",
+      "sha256": "7dbdaf613be5174d5efff5509d621f6d272279ff5d7ab134cb6f488c3b7ef167"
+    },
+    {
+      "path": "packages/recommender/src/model-groups.ts",
+      "sha256": "a78eb1f16464e623da1f1cd2d02716ec7812cd8632644dbfba880f7028ef7b94"
+    },
+    {
+      "path": "packages/recommender/tsconfig.json",
+      "sha256": "2e0c8273e419e5d4431b2a4deee4e5dbc7a6ed3926268de7d9124397304944f3"
+    },
+    {
+      "path": "prompts/challenge-keywords.v1.md",
+      "sha256": "b59d03385c499b792a5a63c12384b8a04518a4750c883d87f7d5cfcef2f1db03"
+    },
+    {
+      "path": "prompts/image-variants.v1.md",
+      "sha256": "36cdfb504ce628ad4154ebaa7052af66a52a45917264d0f3c795121d5ece3270"
+    },
+    {
+      "path": "prompts/optimizer.v1.md",
+      "sha256": "ec13bc2e422faddcf98f6a1e20e0dcc5316cbedc2e7016117b7abe50cb29ae93"
+    },
+    {
+      "path": "prompts/task-analysis.v1.md",
+      "sha256": "78630cfc4f24071fa6196e03d81dcf0eb9ef69fe69b1a22f444eee8d986f2421"
+    },
+    {
+      "path": "supabase/migrations/202611080001_foundation.sql",
+      "sha256": "fe0883929e3cd77fde5d241a6d7e5d6c2d60561d7146f9e7caf948eca3daa329"
+    },
+    {
+      "path": "supabase/migrations/202611080002_prototype.sql",
+      "sha256": "ff8bdf3659ce4339c116db446a648f5b893708161022bd97f3a9034747355166"
+    },
+    {
+      "path": "supabase/migrations/202611080003_ai_usage.sql",
+      "sha256": "9e3721c0f7f728a029528cc8a314bb41fc43c9f18ed3b4df0662f9fdf7d24eea"
+    },
+    {
+      "path": "supabase/migrations/202611090004_reward_policy_v2.sql",
+      "sha256": "3b99a21318e7c5d1fab4970b52a3541c9dce46752cd3c8b9bf14ba59c73d5cac"
+    },
+    {
+      "path": "supabase/migrations/202611090005_reward_policy_v3.sql",
+      "sha256": "423ccb78f8cd7eb8104fa92b4ef85d031c0b6fef148bbe012ecda6a0c8610701"
+    },
+    {
+      "path": "supabase/migrations/202611110006_daily_content.sql",
+      "sha256": "25cf55c69d1008f58302c857ac4b2ade1b3a8823079c1ddcba3fc2014975f8b4"
+    },
+    {
+      "path": "supabase/migrations/202611110007_test_demo.sql",
+      "sha256": "d72bbb9e0348cfac8c5a9c5886030a23e6870158baf814e88cae094e36b9c8a7"
+    },
+    {
+      "path": "supabase/migrations/202611120008_anonymous_auth.sql",
+      "sha256": "6f37b71c0f0a690c0dbca3fbdce17312878b377a2f9a6418ec19abe885446fa3"
+    },
+    {
+      "path": "tools/assert-toss-build.mjs",
+      "sha256": "a579c60e96e2fc1cbc22ee744fdef05bee40a9fce7ef2a5f1927d38e56eecc76"
+    },
+    {
+      "path": "tools/assets/build-expansion.mjs",
+      "sha256": "acc99b50a48ca1c0e3db52c40b281ce235a1beecf9ce2476622b755df0ebc754"
+    },
+    {
+      "path": "tools/assets/build-fixtures.py",
+      "sha256": "f6ae5fd99462750cb2e0acb2e20995117b71c43d14cc0f95f05357c57a61d2c2"
+    },
+    {
+      "path": "tools/assets/check-expansion.mjs",
+      "sha256": "19b04313c9da03db970f2b4212ea06d2c8127728b2ca0eae6167748c83120378"
+    },
+    {
+      "path": "tools/assets/prepare-garden.mjs",
+      "sha256": "3467fe030445675753c61ddf317a4c2c73e581b8fe9d7a4325713621ec0cf1a0"
+    },
+    {
+      "path": "tools/build-test-ait.mjs",
+      "sha256": "e5949ed76d4cc118b3740f8354b795c4e01a8c0a6f95ae947af1e3927fc5ea17"
+    },
+    {
+      "path": "tools/build-web-demo.mjs",
+      "sha256": "f3ef59b038cea84d248451ef2ac0934db28112301c04a25f4fe39b354668a8fc"
+    },
+    {
+      "path": "tools/check-db-connection.py",
+      "sha256": "2152c081be4479f74dd624521f745ee14fcb4ac82122e80aa492195ae509b0b7"
+    },
+    {
+      "path": "tools/check-gemini.mjs",
+      "sha256": "dddd124119012b7579c1b02d413bf8e9d1d8bd52f133130305e93a01c08fb0e5"
+    },
+    {
+      "path": "tools/check-optimizer.mjs",
+      "sha256": "43d8fe290a39d331fb050f42390182d5a784322516ac571e47c8264a7ff39f9a"
+    },
+    {
+      "path": "tools/check-recommendation-routing.mjs",
+      "sha256": "5dcc818eb03891d49e63bc5d93bbc7200f3db5322344a4aff4159fcb77efdf49"
+    },
+    {
+      "path": "tools/content/approve-reviewed.mts",
+      "sha256": "11a17e5560e73a1c84f153fd1cc0ddf3399cf52d56572776b937d0d7d967ff53"
+    },
+    {
+      "path": "tools/content/publish-preview.mjs",
+      "sha256": "ab2b73e0cf8c5d54b6b6c6ee152fce9dd1cb10ebaa0c25647287fa851465e1a2"
+    },
+    {
+      "path": "tools/content/publish-reviewed-preview.mjs",
+      "sha256": "941c5ab04136a6a37e8ca773ec46d82bdb6732f54c1facb323f3d595a43c01ae"
+    },
+    {
+      "path": "tools/content/review-10d/build.py",
+      "sha256": "b626515bb7cb42a429f71121069a753145753436048173b3a07fe4de9f11a129"
+    },
+    {
+      "path": "tools/content/review-10d/editorial.json",
+      "sha256": "5f6cd5099e765ebcc1fd12affcbbfe0dcde4c5d05901910299be17b68b99220c"
+    },
+    {
+      "path": "tools/dev.mjs",
+      "sha256": "5db71797ed7958e8cd43d78d815bc41d0f6e50a6065ef6b23dcd6937945b7396"
+    },
+    {
+      "path": "tools/eval-output-routing.mjs",
+      "sha256": "3f6623f77ef86746d2fd39acf3dc836fde0842837c9b28b48829e247c4fd47e4"
+    },
+    {
+      "path": "tools/eval-recommendation.mjs",
+      "sha256": "20f6b12e39e40eb93c00c786f15f0b7904e4e7bbe5f7b02e2c96af1a65b4a222"
+    },
+    {
+      "path": "tools/model-sync/.env.example",
+      "sha256": "014d76145d263fa74e56e35394579168fd4eee460fbcea3017ddcb63f35da4ee"
+    },
+    {
+      "path": "tools/model-sync/audit-coverage.mjs",
+      "sha256": "647a5f3da311890265a651ca6ba7a80fdf281689b0e545df883129f5d539ecc4"
+    },
+    {
+      "path": "tools/model-sync/audit-lifecycle-collect.mjs",
+      "sha256": "8aeee4b2956feb585321495c9f4942aa43c304e92768057fa8cf80457e36c936"
+    },
+    {
+      "path": "tools/model-sync/build-group-review.mjs",
+      "sha256": "c2a437fe0f6a79b3c818ae997b4c37b15f468566b046817707533579c96ae177"
+    },
+    {
+      "path": "tools/model-sync/build-lifecycle-policy.py",
+      "sha256": "f8ff125e1700e22a88b87800a07dfaa4f0c6d0c3fa5600dd07bfff5341070913"
+    },
+    {
+      "path": "tools/model-sync/build-media.mjs",
+      "sha256": "db28a6c894230a4a29d4de911f1f577c4b0568aab7c600591f5e8803171cdce9"
+    },
+    {
+      "path": "tools/model-sync/build-selected.mjs",
+      "sha256": "dace3b2ed90163e6ceeb75a3300760dc2921e7bc95aecf997ff92fcd7e8ee1b0"
+    },
+    {
+      "path": "tools/model-sync/catalogue-selection.mjs",
+      "sha256": "530ce689ba687f6ccd4059f289a8666ea671d4d637afd7ce407ded8ac28fd23f"
+    },
+    {
+      "path": "tools/model-sync/collect-media.mjs",
+      "sha256": "60b5fb598d8de42e4fc0ca7b5b355d482d17cb01dd1afd3407f898e6674bc4f8"
+    },
+    {
+      "path": "tools/model-sync/fetch-group-family-sources.mjs",
+      "sha256": "5190375cab70a28ac153aab4a2691bb165270c5288abfef3e3b56c702526bf86"
+    },
+    {
+      "path": "tools/model-sync/fetch-group-sources.mjs",
+      "sha256": "81e0400da835b8a46451d3fab5ecf93e735cbbccdd0ddfc4062fb031d51f0459"
+    },
+    {
+      "path": "tools/model-sync/report-lifecycle.mjs",
+      "sha256": "72c851fcbbf64c522f69385194798ae7feca134508aaab900e9a8157abceb590"
+    },
+    {
+      "path": "tools/model-sync/snapshot.mjs",
+      "sha256": "c09651bd1c6f9edc5f8e912e468b02e06cbdb900ca6ed9b77aa3734937b3e15b"
+    },
+    {
+      "path": "tools/qa/audit-action-labels.mjs",
+      "sha256": "c77af134332cdd34761f7db4d707e78d254eb51d6da3674e70fd8b47e678c424"
+    },
+    {
+      "path": "tools/qa/back-navigation-audit.mjs",
+      "sha256": "7cb0fd74653342c6eed2141160a0447dc11ab0915f85fc6885e8fe42e8806c67"
+    },
+    {
+      "path": "tools/qa/check-bundle.mjs",
+      "sha256": "7e693b32a1c1f2b09083cb0349046f29f1f0c8cc067f7320f3c2a7b4a4cab330"
+    },
+    {
+      "path": "tools/qa/dev-reset.mjs",
+      "sha256": "d32faa3b2f86370b164f8113758da622a5b91513d2b65b16fd8a9efd517b76b4"
+    },
+    {
+      "path": "tools/qa/feedback-models.mjs",
+      "sha256": "a7a93077c54cd34511650563ed126db8336042f466ac949c145b50b4d12d93a7"
+    },
+    {
+      "path": "tools/qa/flows.mjs",
+      "sha256": "cea13eae25a5b732dfe566d8657f8f5262b8670f5e27ff618f5cf52fab8e2574"
+    },
+    {
+      "path": "tools/qa/font-audit-extra.mjs",
+      "sha256": "8aadcf7513ecc46dc708dc40cc1805fc0094033ad04960ebcade5dd4d5e09c64"
+    },
+    {
+      "path": "tools/qa/font-audit.mjs",
+      "sha256": "f9f3362720c7e2a8d5cc3c60f595cf934764640e7e855b781431e7afca5dae99"
+    },
+    {
+      "path": "tools/qa/game-cap.mjs",
+      "sha256": "8a42d1f3dbe13c69275456b867240ddd31288cc4570bae49e5d10775d356721b"
+    },
+    {
+      "path": "tools/qa/game-pacing.mjs",
+      "sha256": "ffc03aa990ba0ea2fbfd330639c96d46e656fa0df56e5ca4dd113c5e9d752042"
+    },
+    {
+      "path": "tools/qa/game-v3-simulation.mjs",
+      "sha256": "715372284b9808285da549c423a84eb2e29221243186071e8cad5576fbe34074"
+    },
+    {
+      "path": "tools/qa/garden-free-placement.mjs",
+      "sha256": "c5efbf5e2f3c9780fc773cd035e9d3e8a800cb62531f0c90fa8d768596c358bc"
+    },
+    {
+      "path": "tools/qa/garden-item-options.mjs",
+      "sha256": "ab8c2aaded8e24d89206f277334d329da1e3e6d04c95e7c932f7d91599aa36c2"
+    },
+    {
+      "path": "tools/qa/host-safe-area.mjs",
+      "sha256": "5fad28fc3c2c2fbf08aa02f573f8a29ff43aa85b85d6c55e26fdc0bed985720e"
+    },
+    {
+      "path": "tools/qa/mobile-input.mjs",
+      "sha256": "35763b1df133ecefa7406ede38bd8ce7f91a3cafa5d723007c602294c890b802"
+    },
+    {
+      "path": "tools/qa/native-reward-toast.mjs",
+      "sha256": "90682c2f6363a1a40da05cda78b04937d0cdcb71c286983675cbb6e24f87da76"
+    },
+    {
+      "path": "tools/qa/navigation-and-lifetime.mjs",
+      "sha256": "b8934b965fa2d7fedcb105408714dd2b1b2f8ffe5331acd25996b56450cbf5b0"
+    },
+    {
+      "path": "tools/qa/personal-web-flow.mjs",
+      "sha256": "6a36024cdd331eb19375218430765af8a347bfe5916cdae3424a17a17b39354d"
+    },
+    {
+      "path": "tools/qa/popup-mobile.mjs",
+      "sha256": "91c3645740efa582c4e16f6eed319f3e0ad0f27735cc8c94e2646ec137f03a21"
+    },
+    {
+      "path": "tools/qa/release-fixture.mts",
+      "sha256": "b9d36317c1bba9ec137e86ca3f7fcd7e699545509dca7ab331f6e19d6cdc5692"
+    },
+    {
+      "path": "tools/qa/release-policy.test.mjs",
+      "sha256": "f0512ecc93fa69bb5606c592d4855d41cffa41f6f0c7853737bbd874f89b809a"
+    },
+    {
+      "path": "tools/qa/release-ui.mjs",
+      "sha256": "64b56c40f8f01961d75d461f8ff100c8b0b6b9c2b8f3c5b2c2a5cc97bdb9a57b"
+    },
+    {
+      "path": "tools/qa/runtime.test.mjs",
+      "sha256": "a4866e1cd0c1064129b2ebb1d50fd59997ee2543fbad1407d7649bc7272aa37a"
+    },
+    {
+      "path": "tools/qa/safe-area-runtime.mjs",
+      "sha256": "d6889842014eac53a9205e7356ecf8cb711a4ac88926eccb34f657c42e9eda0b"
+    },
+    {
+      "path": "tools/qa/scale-lock.test.mjs",
+      "sha256": "a2fa78cc8b4a0ee6b807a5b5a857c1bc9cd1c5a9d4bbf9486f6cd8363cdad1f8"
+    },
+    {
+      "path": "tools/qa/scroll-audit.mjs",
+      "sha256": "be1909dbd44a85921032eff2328d51613bfc4be0decd05a0aac09cff5fe3158c"
+    },
+    {
+      "path": "tools/qa/session-recovery.test.mjs",
+      "sha256": "f1a8b1fa4f6932633a4307ceaa5d6a4ec843795881c3829961f4b01951f64ea7"
+    },
+    {
+      "path": "tools/qa/smoke.mjs",
+      "sha256": "cee60ac5822ec99c2496f078bd1ac6744f90eabc5552b5991d77394bfb359fec"
+    },
+    {
+      "path": "tools/qa/spacing-audit.mjs",
+      "sha256": "f033e780882d981383be2e780096573ac3bdbd9f1147ccfe7b065f376f20ee58"
+    },
+    {
+      "path": "tools/qa/tier-games.mjs",
+      "sha256": "73305bb77b05b59d780db1af461df9ee040cbf1799b8945d5640798e8dfa9972"
+    },
+    {
+      "path": "tools/qa/web-demo-browser.mjs",
+      "sha256": "f4f0f442285d2d900a218b5e722d86ebaf42c0ccfed9cbbf494dccd1f8b74f3a"
+    },
+    {
+      "path": "tools/qa/web-demo.test.mjs",
+      "sha256": "f3990d64371998313b8f9552cae4c8dbf95fe52254d39d0ec40218e2fc4d620c"
+    },
+    {
+      "path": "tools/reset-preview.mjs",
+      "sha256": "c9e900cfb1032daa8f6b99f3b3b50de55b3d35c722cd212e10b1d16c1d1bc1b6"
+    },
+    {
+      "path": "apps/api/certs/supabase-ca.crt",
+      "sha256": "700723581420dd1ac98fd7e9ac529f0ef210eadcaf87fc868a3ad7d114c2f3b7"
+    },
+    {
+      "path": "apps/api/certs/README.md",
+      "sha256": "5c44038a7e961f34c40c3b12529ad67f598f8a3baaa05aad71b24bcfe3630396"
+    },
+    {
+      "path": "output/model-audit/group-sources/claude-lifecycle.txt",
+      "sha256": "a04f5853f198f546cbf1927059fc701c3ea82aacf709a9a66f3bf37855045b03"
+    },
+    {
+      "path": "output/model-audit/group-sources/claude-overview.txt",
+      "sha256": "a6b6ea43f997802dc8b34aeaaaade72592cb872b8acb692f7a15240c06a3d85f"
+    },
+    {
+      "path": "output/model-audit/group-sources/cohere-north.txt",
+      "sha256": "f6a2f39625413cca2583076daf15ebfa7641fd1093d21fb4f31e6cf836f6d0b6"
+    },
+    {
+      "path": "output/model-audit/group-sources/cohere-overview.txt",
+      "sha256": "9fe88968b2b4a6a2baea2ab55c599b55f8e370f12d58546a71508c03ecc2ae3c"
+    },
+    {
+      "path": "output/model-audit/group-sources/cohere_north-mini-code_free.txt",
+      "sha256": "27071f762d43fd53310d0a4ccff45d5ad32bb9565e0e8206a30485cb6b147a64"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-chat-v3-0324.txt",
+      "sha256": "598c401e426453f87161fb90a7c28a62e395b023a683c43d0793bf0d45753ba9"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-chat-v3.1.txt",
+      "sha256": "dcb317340f6f0ae5146c99b0f0062c1c9781d330997901254ff0c18a5b35a918"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-chat.txt",
+      "sha256": "3739763a851074c810f1565f9823956f3a095231f8c591dd3c254581bdd3cf08"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v3.1-terminus.txt",
+      "sha256": "dc67c899eb7a549130d6c2e4b36cff0b12917720dafe9e12e141547d864ff475"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4-flash-0731.txt",
+      "sha256": "252acafdc9204d0dba3fde1b0a93d71cd1664a4ceadfe222b60117ed0ccc56ff"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4-flash.txt",
+      "sha256": "c4d714818a4d3333542edc7d38ea065825a0cf7aa8fea3605bbd1d1c18e4a610"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4-pro-0813.txt",
+      "sha256": "61755d88e95789fcd7a36f50892f97bba977a30fc99d0f2907ab787ed10b0e66"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4-pro.txt",
+      "sha256": "c4d714818a4d3333542edc7d38ea065825a0cf7aa8fea3605bbd1d1c18e4a610"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4.1-flash-1017.txt",
+      "sha256": "b72b796e4f4c739eca5d0ad360a7679b39118ca7eb64891f7151a527b292c42a"
+    },
+    {
+      "path": "output/model-audit/group-sources/deepseek_deepseek-v4.1-flash.txt",
+      "sha256": "347c9db4e5506acb531cbc3b724407ab88e9af8781679152f0823d7bac16d251"
+    },
+    {
+      "path": "output/model-audit/group-sources/gemini-argon.txt",
+      "sha256": "b754ba2a7be33d2444764418a9264b315f3eebdcdc89885458450ad1ba10ae4d"
+    },
+    {
+      "path": "output/model-audit/group-sources/gemini-flash-lite.txt",
+      "sha256": "47da1c404e339a9180117d393d00cc97a0bb8e0803fdafbcbd6b4d16332a04a4"
+    },
+    {
+      "path": "output/model-audit/group-sources/gemini-overview.txt",
+      "sha256": "3875002d6dc17c07ec9c08821e2be8b1b679384213ab3a8e994669696eadac58"
+    },
+    {
+      "path": "output/model-audit/group-sources/gemma-4.txt",
+      "sha256": "b629e8368128fb85834fe68ba5f6072f56885ada964b2ec223f3768772ca6a3e"
+    },
+    {
+      "path": "output/model-audit/group-sources/google_gemma-4-26b-a4b-it.txt",
+      "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da"
+    },
+    {
+      "path": "output/model-audit/group-sources/google_gemma-4-31b-it.txt",
+      "sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b"
+    },
+    {
+      "path": "output/model-audit/group-sources/gpt4o-base.txt",
+      "sha256": "22950725c1d75a0098d1c5f046f10c946ffdd41e76d37d14b44e80a6dab8abee"
+    },
+    {
+      "path": "output/model-audit/group-sources/grok-4.20.txt",
+      "sha256": "8a53e4588ede83e8a458eaabc796490c5b83a73b496ac1a6b30d4b3e479b6e53"
+    },
+    {
+      "path": "output/model-audit/group-sources/grok-4.3.txt",
+      "sha256": "0d569e8e215cab7b58c94678dcd2561b07fe7719ce925522208e4591706472d5"
+    },
+    {
+      "path": "output/model-audit/group-sources/grok-4.5.txt",
+      "sha256": "9c3bc33f342a8623bac3252b7b59bcbcb91a8dc4988d0039181a77c23e16e9db"
+    },
+    {
+      "path": "output/model-audit/group-sources/grok-4.6.txt",
+      "sha256": "883c9845ca80e3e3c8dce4cb9c93f021cc3188ec3e86adc642357558da192146"
+    },
+    {
+      "path": "output/model-audit/group-sources/grok-4.7.txt",
+      "sha256": "7684cc871d30ebe9892c8f742a21903221431d5ba5ff5e085debc855ef94d7c6"
+    },
+    {
+      "path": "output/model-audit/group-sources/ibm-granite_granite-4.2-8b.txt",
+      "sha256": "01396b1a8596586986fea22cfaa86d0255d19113d71fe09e0b69cc2bfa4307da"
+    },
+    {
+      "path": "output/model-audit/group-sources/inclusionai_ling-3.0-flash.txt",
+      "sha256": "52f6285293eafc30ffa0cecc7b2da3f199b7829314f8911c9aa006ae8aad3ba4"
+    },
+    {
+      "path": "output/model-audit/group-sources/inclusionai_ling-3.0-tiny.txt",
+      "sha256": "f86dd6517632df8cc98eaf3599d8524ccf63ba345413251a826d8ef450c0ffb5"
+    },
+    {
+      "path": "output/model-audit/group-sources/inclusionai_ling-3.1-flash.txt",
+      "sha256": "af8792d2b5eac8fbf16f6d413eb72deb23d27531d0ee2d36d969b30685fdb7d4"
+    },
+    {
+      "path": "output/model-audit/group-sources/meta-llama.txt",
+      "sha256": "cea1ed0526572ce28536b5be7adea856436a0ee52996ba1f1f96f7e75e63b190"
+    },
+    {
+      "path": "output/model-audit/group-sources/microsoft_phi-4.txt",
+      "sha256": "4cc56faa6a5bcbde6227789b2ef9aedfde481ca660c8a4b686703aae19b00011"
+    },
+    {
+      "path": "output/model-audit/group-sources/minimax_minimax-m2.5.txt",
+      "sha256": "6a5d2382e3e154f8a8619ad173f825ee244433363868e446d6d510f8ee72831c"
+    },
+    {
+      "path": "output/model-audit/group-sources/minimax_minimax-m2.7.txt",
+      "sha256": "10cf56dab273a7524ddeae9c156c9ea9549b94577bd6864c78151cf5a735027a"
+    },
+    {
+      "path": "output/model-audit/group-sources/minimax_minimax-m3.1-flash.txt",
+      "sha256": "c49a7cca92321066bc20e25ce720260242dcb112baf1d09c7c213899e39d2151"
+    },
+    {
+      "path": "output/model-audit/group-sources/minimax_minimax-m3.txt",
+      "sha256": "5e2abb578c875ad4920cc9dd1d0666b9b65a2f1b9591d7999143eb71f0437ddf"
+    },
+    {
+      "path": "output/model-audit/group-sources/mistral-large.txt",
+      "sha256": "1543f5c88a39a4cc2447b59fb6164a224642516b81d7d9009096d5ca9e44a89f"
+    },
+    {
+      "path": "output/model-audit/group-sources/mistral-overview.txt",
+      "sha256": "38e44fe5c94994f9d1d3010efb6ef4b0a3525001a3e8fdfa3a2866d46d25cebe"
+    },
+    {
+      "path": "output/model-audit/group-sources/mistralai_mistral-large-4-0.txt",
+      "sha256": "498bf4121e75f5582ee276f8ad6c6d96eea78885c878819dd1551c2dd84dc92c"
+    },
+    {
+      "path": "output/model-audit/group-sources/mistralai_mistral-small-24b-instruct-2501.txt",
+      "sha256": "c3889bddcf96969899f867f657f1929f0f66ee9e91cf15870a7b0452a6b5a6ca"
+    },
+    {
+      "path": "output/model-audit/group-sources/mistralai_mistral-small-2603.txt",
+      "sha256": "243f9d4f6cdb5644ca93d34d2e002822cb946803a6a7e3aed39b56d6ceeb1996"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2-0905.txt",
+      "sha256": "fbb70f67df597c48b15ac095a504247b083b0b65139e34f89426f0ce0775da59"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2-thinking.txt",
+      "sha256": "8343341da86d2a74ee576768ea2f8c0be2d3e9cf1cb51838a794581e7a1466cd"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2.5.txt",
+      "sha256": "1b04bed9c6c25894171c0ab5e0b4c4d57667698a654dbfd5a6c1649b922810a5"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2.6.txt",
+      "sha256": "95db3be1d0473e482c7aa901f237ad7af8bb7929625a777b27428081bb8ea9f7"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2.7-code.txt",
+      "sha256": "c78bbe5af19636b180eda956abf1f30a79027ec04d6642ebddc44edbc4470879"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k2.txt",
+      "sha256": "72e2785dbd9ada9355ea3a812d2a9da606f1ae07feea7a0f7e18b8111deb8837"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k3.1-pro.txt",
+      "sha256": "5daa13793292c65cf198b2f4997c69a21378a1688c40c8b3dbdf48a27dd15085"
+    },
+    {
+      "path": "output/model-audit/group-sources/moonshotai_kimi-k3.txt",
+      "sha256": "57de265b5842dfa465c6e73b368b0e15a89b8793b5450528dad577da202cc6fe"
+    },
+    {
+      "path": "output/model-audit/group-sources/nvidia_nemotron-3-super-120b-a12b.txt",
+      "sha256": "7d8cf610376dc7668b788b082b53c4b39229b3b0df5478f5504ba07e6a960228"
+    },
+    {
+      "path": "output/model-audit/group-sources/nvidia_nemotron-3-ultra-550b-a55b.txt",
+      "sha256": "8ac2780e2662ac579b68f2a228f566839f8b1608ac39ee6bde29f2580a08dcec"
+    },
+    {
+      "path": "output/model-audit/group-sources/nvidia_nemotron-3.5-lightning.txt",
+      "sha256": "5d9d96d2f2b154d72625d39628a011e39e0477ffb99e45967eefe4cfd269b928"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4-turbo_batch.txt",
+      "sha256": "3a6c5712d199feac06ac5a36d153c5d03ddbcd3b431e33c68cb42d5d966c8800"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4.1-mini.txt",
+      "sha256": "06d8ad50f5d80f51a437dda8aa391e52e83ccf18672347a1d572e33b565754a4"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4.1-nano.txt",
+      "sha256": "5b4b61b8b7cdd94378d852a7c96803860829db784a82eec1f8af5b2603894ba0"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4.1.txt",
+      "sha256": "baa0f3aa720c9ab9faf3d060d56549ecc6273dd366336d7269c92bebe95b3389"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4o-mini.txt",
+      "sha256": "93e14f848cf90f35dd77a270998a9b2b440ef08d724da11947b0dee26179f09b"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-4o.txt",
+      "sha256": "22950725c1d75a0098d1c5f046f10c946ffdd41e76d37d14b44e80a6dab8abee"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5-mini.txt",
+      "sha256": "a483623704a4cfcc090feaed29cc3b5a9af61ad64e8925a6ed0593e07ca2695c"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5-nano.txt",
+      "sha256": "820ffae70cff96b13f2203766f75fa8ebcafeaeb9d970cda021280ae13cc922f"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.1-codex-mini.txt",
+      "sha256": "fbf4ddc350f8b846b8723167d8f8a1c773b70c5d93fe1c708513eb71bf0e4482"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.1-codex.txt",
+      "sha256": "808b628d169ed222f2c342bdada07dfb172c2ff16773d28232a8a3f92ebdf4be"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.1.txt",
+      "sha256": "f74abd8073ae69ffeffa8f4773ef63d9a1224badecc717682db9fb1911dcfb7e"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.2-codex.txt",
+      "sha256": "1e6cb6dd5bb1e9a52c660646602427dc714e3b4f880fa765b51187b1b1c14359"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.2.txt",
+      "sha256": "4f0a82d85589c75952cdd147a9bf98a66b14fac309ab678983b27b8afcba3b0e"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.3-codex.txt",
+      "sha256": "18a6039b6e2617159b8358670ce40a62346c9206bf9125a745571ed0e794204b"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.4-mini.txt",
+      "sha256": "83625d2f3548c29379b3b2a44b183a26d266d2f5c3ffda7161dd19c9213a9058"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.4-nano.txt",
+      "sha256": "c5b4ae3bbcc8e0580808b12eadc74ccc05aa16c4b7bad160deb22e62b13bc0b1"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.4.txt",
+      "sha256": "6a0bab4b81ccca4ae50b23f6c9cbf47557ccb3927a801c212d1a882b437e9026"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.5.txt",
+      "sha256": "4ea96de1c9550fae3dd3ba75d1d3e50bf03c8fe708ac8a85adacbe20a591ece4"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.6-luna.txt",
+      "sha256": "8e4c2cc03c86804b4f5a0bf73ebb9508666ab712db32b6e2b4723a67d053ede4"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.6-sol.txt",
+      "sha256": "c0c7f9a635a572335cfe0ba4ea9b920d9b3d2b40aa1ba9f31f3adff203834637"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.6-terra.txt",
+      "sha256": "1ebbe2349b6bf8de2dce74da95fdfbe4faedfc44d50a218fc7f52a1302dc6fcb"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-5.txt",
+      "sha256": "9a43b63c9b63dfc74104eba1739f72dabb8ac7a5b8d697e88aa1466f96092059"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-6-astra.txt",
+      "sha256": "a9b79d0f5988c879aea6f4f7adb19743c469ee538d8e19744bdaee13d0c50ae2"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-6-luna.txt",
+      "sha256": "e3578e39ea91fde7045e386ba3863fa621dbf9a31d44e0cd569b74822721223b"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-6-sol.txt",
+      "sha256": "c54f879ef7cdcd95b5b891d2b8f29cf43ebb80089dec4d81eec556f287016fca"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-6.1-sol.txt",
+      "sha256": "02dff9ef937bbc97fb24ba7c936269a549563cfb8a49b91a6ba1c1575d2b77c0"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-6.1-terra.txt",
+      "sha256": "6a73b3e2e941fbe3813636d5bd2d653ff190e49cc3692eaf8daa3bb125c877f8"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-oss-120b.txt",
+      "sha256": "49c2a870d7960b810a56c5a7fc24950ae24678b5860ed67c9466aa4528e56f0d"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_gpt-oss-20b.txt",
+      "sha256": "767b92c9b5fd0992605d025fe048fe9ee186c40c8a5dd526056cb8fcc5a2aa90"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_o3-mini_batch.txt",
+      "sha256": "b2f1fa4a9fbbfa775a673770c993a60415a2172ae1cebc8cd51de5f9332690c9"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_o3.txt",
+      "sha256": "f2b10b35cc27286cbee11155c1d0cb1b48262b4600ee0037ece376bd4d692615"
+    },
+    {
+      "path": "output/model-audit/group-sources/openai_o4-mini_batch.txt",
+      "sha256": "e3731b90c851bf9f6d229a4b2fc2242e68eb5532c24d13f64eca7b375ec866e0"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen-overview.txt",
+      "sha256": "f4822b5d865f2ef80ca1ef9f6ec7db7fab25c29804b0c223f0521bc76908d868"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen-2.5-72b-instruct.txt",
+      "sha256": "62d6f2176c0925b7c7e5ec6c5ee06cad83868bb21a8e25d58283e3d7707d3f79"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-14b.txt",
+      "sha256": "7ef503e68996a4e32007fedc7d8e198846e9b1f36620d38a79b89934100b1250"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-235b-a22b-2507.txt",
+      "sha256": "af233f6e013228859d81a2088521781d4e6a06c5960ab3b7ceee6466f550b5f6"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-30b-a3b.txt",
+      "sha256": "1897b7cdf7b5f45ae847b87f9b416d4635fe73228e0daac669a4e1f3e5948858"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-32b.txt",
+      "sha256": "0af37735eef45eb3b406f3d74952e6cbcbc180904dc68b73a31a690719a235da"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-coder-30b-a3b-instruct.txt",
+      "sha256": "98e8f0e00f2d6c7f1743fc4ef2b6297dcc57bec73d71f36588aed984370ac3f3"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-coder-next.txt",
+      "sha256": "548db6d595e3bd88d7f6e7f4eae8e66ce8e6f980fd5ce52d7daf222e38559af6"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-next-80b-a3b-instruct.txt",
+      "sha256": "58d0065d590e5f3ff2f87f82a41d65db26bb333735bd309fd9989626a79ff486"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-vl-235b-a22b-instruct.txt",
+      "sha256": "207f81bc285522284cb14c0b8ff2ff022993f5e55c39edf570eb00e1c64103d1"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3-vl-30b-a3b-instruct.txt",
+      "sha256": "37d278ac62511b5267c1a65d83d5c93a1234c7c3aafc68fb5be48a385269aef5"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.5-122b-a10b.txt",
+      "sha256": "1775bb720398d6107cce3da0c3129abfd24ec639fd9853d5134df1e5c6118a4d"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.5-27b.txt",
+      "sha256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.5-35b-a3b.txt",
+      "sha256": "71c3bbc2eadadd5980bbdbb15df958c27d42ede24821015602a021109aacf492"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.5-397b-a17b.txt",
+      "sha256": "bda4b24e975f65ac677985306ddbad33362e65064637660654c8bb7dea7edf50"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.5-9b.txt",
+      "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.6-27b.txt",
+      "sha256": "bb936d6da51014f1edc9aa4cf9abf28d98695b7616ad56adfeeebfa752051d3d"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.6-35b-a3b.txt",
+      "sha256": "c4ddaa065649ff6352648f64747a16eda31726f3e34add94ce04abb461c77b75"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.8-2.4t-a95b.txt",
+      "sha256": "7690c680c2d6eb284179ef5dd4db63260d248531cae9087b09b2c2200230f331"
+    },
+    {
+      "path": "output/model-audit/group-sources/qwen_qwen3.8-27b.txt",
+      "sha256": "7c24f46af1e0024e6ce9b799df6f4865f9200acf3b6f92b6530c37248cc9e821"
+    },
+    {
+      "path": "output/model-audit/group-sources/rekaai_reka-flash-3.txt",
+      "sha256": "5dabdf0d6474d629bf38c29e90465969c0a1266a3b0e410dcac2353de4832707"
+    },
+    {
+      "path": "output/model-audit/group-sources/solar-mini.txt",
+      "sha256": "85a820182b443c04ff23ab1b8c6768096f0f8062c781e45f5983a630e73e5ac3"
+    },
+    {
+      "path": "output/model-audit/group-sources/solar-pro.txt",
+      "sha256": "7caa74cc4f6e60551cc9551a498182541d799d6a49ebb668d71b81c8f934aeb5"
+    },
+    {
+      "path": "output/model-audit/group-sources/stepfun_step-3.5-flash.txt",
+      "sha256": "6b903e2816900a43ec28d4a8f0f5c2feb72f7c65945cad503375414a270751d2"
+    },
+    {
+      "path": "output/model-audit/group-sources/stepfun_step-3.7-flash.txt",
+      "sha256": "b0d04c993d40a28fff3ecac99045de502e75b0c0635e233f2aa8614783972519"
+    },
+    {
+      "path": "output/model-audit/group-sources/stepfun_step-5-preview.txt",
+      "sha256": "58e6b5768025c646002c5dddce5fb09ef4ccf795de2ec3424a0ca9219b163747"
+    },
+    {
+      "path": "output/model-audit/group-sources/tencent_hy3.txt",
+      "sha256": "dbdfc5920bf548fb484b5ec1837032f6c85e1886f2930aa5bee629c1f9620e8b"
+    },
+    {
+      "path": "output/model-audit/group-sources/thinkingmachines_inkling-small.txt",
+      "sha256": "2de45e1f0d8d387626aa063dccd54c1f519c21b2adec1c1fd597e451ae08d5db"
+    },
+    {
+      "path": "output/model-audit/group-sources/thinkingmachines_inkling.txt",
+      "sha256": "8c976e47c2a9faa71436c0668a5daf8bc5d9a8bd5ecbca51c669d3b8ce98fe9a"
+    },
+    {
+      "path": "output/model-audit/group-sources/xiaomi_mimo-v2.6-flash.txt",
+      "sha256": "a43703bf16d04a461b43ef650ea94132ded35f287d9b51196ec642982dc48b78"
+    },
+    {
+      "path": "output/model-audit/group-sources/xiaomi_mimo-v2.6-pro.txt",
+      "sha256": "6a404a7763105f70d5b259b06306562d192735a905e76fab1609ecad79fdbd0a"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.5-air.txt",
+      "sha256": "fdcdf454bbb54db5cf1a1dd83152feb6555c4962678cae5c7658bf9cd0261e8b"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.5v.txt",
+      "sha256": "dd76dc7081d1b7f0722118a2b600738040a4c8fd23e6ae51a8575c86c3572216"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.6.txt",
+      "sha256": "d96ae299bba652f051a0c2c3ac037abbeb06ad7804b17844d62662c70a0d276f"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.6v.txt",
+      "sha256": "2fd45a740ae60a4a1495ffdb643fe24de88b2e0ecdbb7aa9eb9b1c241016afea"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.7-flash.txt",
+      "sha256": "7bfcbced42741ceb3fff8809f8d6c84ada9696850e257c4e53e6c2fe9ef4f9bf"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-4.7.txt",
+      "sha256": "ad072cbe81374f18149a107f2e1cbed93f27a6b220409a6bb34ba97a4d36757e"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-5.1.txt",
+      "sha256": "2cb148b732f596716f8c9366edf072e35746de6d06fe69c92301ddb492557077"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-5.2.txt",
+      "sha256": "7ba22185651d8f69fbf6227ee718eb680fd834ec8e79ba78df6fa54896614b3d"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-5.3-flash.txt",
+      "sha256": "e6c5d41400e28f5a89418a0d15b09b9c113314a7553d40d7d4a8a72fcdb87d02"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-5.3.txt",
+      "sha256": "ed1c0a4563c437a32f8953d637a1db9bd831de1b24bd3062a5ace9e04340b1cf"
+    },
+    {
+      "path": "output/model-audit/group-sources/z-ai_glm-5.txt",
+      "sha256": "4f8859aa1e0585e25f4fc61b5c17b2c488c767f37f41231818bc065a865ceae7"
+    },
+    {
+      "path": "output/model-audit/group-sources/zai-air.txt",
+      "sha256": "d67cf535f053368e0c02a299bf86d4dc3a2aee1c6095996689a30810d99e6749"
+    },
+    {
+      "path": "output/model-audit/multimodal/models-all.json",
+      "sha256": "fd1d29079ce72372580f11cce8301af53eb1299931f8edc28b07073ad5fe018a"
+    }
+  ],
+  "handoff_adjustments": [
+    "Frontend .env.example defaults to local /api",
+    "Captured Google documentation HTML has public-site API identifiers redacted; matching evidence hashes updated."
+  ]
+}

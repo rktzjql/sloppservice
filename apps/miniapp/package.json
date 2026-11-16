@@ -1,0 +1,39 @@
+{
+  "name": "@aimi/miniapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "ait:build": "node ../../tools/assert-toss-build.mjs && npm run build && ait build",
+    "android:build:web": "VITE_APP_RUNTIME=android VITE_ANDROID_DEV=true npm run build",
+    "android:sync": "cap sync android"
+  },
+  "dependencies": {
+    "@aimi/contracts": "0.1.0",
+    "@aimi/game-core": "0.1.0",
+    "@aimi/recommender": "0.1.0",
+    "@apps-in-toss/web-framework": "3.10.0",
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/clipboard": "^8.0.1",
+    "@capacitor/core": "^8.6.2",
+    "@capacitor/share": "^8.0.3",
+    "@emotion/react": "^11.14.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "@toss/tds-mobile": "^2.5.1",
+    "@toss/tds-mobile-ait": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^7.3.7"
+  }
+}

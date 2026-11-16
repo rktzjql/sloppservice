@@ -1,0 +1,42 @@
+# Connect this source to a NEW Render service. Secrets stay in Render's environment.
+# Run migrations once against the NEW Supabase DB before first deployment.
+services:
+  - type: web
+    name: aimi-android-api
+    runtime: node
+    plan: starter
+    buildCommand: npm ci --include=dev && npm run build:api
+    startCommand: npm run start:api
+    healthCheckPath: /health/ready
+    autoDeployTrigger: off
+    envVars:
+      - key: NODE_VERSION
+        value: 22.16.0
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: ANDROID_AUTH_ENABLED
+        value: "true"
+      - key: ENABLE_DEV_AUTH
+        value: "false"
+      - key: ENABLE_TEST_DEMO
+        value: "false"
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://localhost
+      - key: SESSION_SIGNING_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: ANDROID_SUPABASE_URL
+        sync: false
+      - key: ANDROID_SUPABASE_PUBLIC_KEY
+        sync: false
+      - key: ANDROID_SUPABASE_ADMIN_KEY
+        sync: false
+      - key: AIMI_GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_TEXT_MODEL
+        sync: false
+      - key: AIMI_RELEASE_VERSION
+        sync: false

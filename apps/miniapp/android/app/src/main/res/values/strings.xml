@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AIMI</string>
+    <string name="title_activity_main">AIMI</string>
+    <string name="package_name">com.aimi.standalone</string>
+    <string name="custom_url_scheme">com.aimi.standalone</string>
+</resources>
