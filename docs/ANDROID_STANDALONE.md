@@ -22,9 +22,9 @@
 ## 새 서버 준비 (운영자 작업)
 
 1. 새 Supabase 프로젝트를 만들고 Authentication의 Anonymous sign-ins를 활성화합니다. 계정 생성 빈도 제한을 설정합니다.
-2. 새 DB에만 `supabase/migrations`를 순서대로 적용합니다. `MIGRATION_DATABASE_URL`에 새 DB 관리 연결을 설정한 후 `npm run db:migrate`를 실행합니다. 기존 팀원 DB에 실행하지 않습니다.
-3. 기존 `db:provision` 도구는 전체 현재 테이블 권한을 한 번에 구성하지 않으므로 그대로 사용하지 않습니다. 서버 전용 `aimi_api` 역할에 필요한 aimi 스키마 CRUD와 콘텐츠/정책 읽기 권한을 구성하고 일반 anon/authenticated 역할은 aimi 스키마 접근을 금지합니다.
-4. Render에 `render.yaml`을 바탕으로 새 Node 서비스를 만듭니다. 유료 플랜 비용은 실제 생성 전에 확인해야 합니다. API 런타임 DB 권한과 마이그레이션 관리 권한을 분리합니다.
+2. 새 프로젝트의 SQL Editor에서 `docs/ANDROID_NEW_DATABASE.sql` 전체를 한 번 실행합니다. 기존 AIMI 테이블/역할이 있으면 변경하지 않고 중단합니다. 테이블·마이그레이션 체크섬·서버 전용 권한을 구성합니다.
+3. 실행 결과의 `database_user`, `database_password`를 비공개로 보관합니다. Supabase Connect의 Session pooler 연결 주소에서 사용자 이름을 `aimi_api.<project-ref>`로, 비밀번호를 생성된 값으로 바꾸어 Render의 `DATABASE_URL`에 넣습니다. 채팅이나 GitHub에 비밀번호를 공유하지 않습니다. 이후 마이그레이션에는 별도 관리자 연결과 기존 `db:migrate`를 사용합니다.
+4. Render에 `render.yaml`을 바탕으로 새 Node 서비스를 만듭니다. 우선 무료 플랜을 사용합니다. 무료 서버는 유휴 후 정지되므로 첫 접속이 지연될 수 있습니다. API 런타임 DB 권한과 마이그레이션 관리 권한을 분리합니다.
 5. Render 비밀 환경변수:
    - `DATABASE_URL`: 새 DB의 서버 전용 역할 연결
    - `SESSION_SIGNING_KEY`: 랜덤 서버 세션 서명 비밀값
@@ -53,3 +53,5 @@
 - Android 네이티브 코드 컴파일 통과. 보안 저장소는 실기기 실행 검증 전입니다.
 - 393×852 Chromium에서 모의 Supabase/API로 자동 계정 시작, 재실행 유지, 만료 시 갱신, 중복 신규가입 방지를 확인했습니다.
 - 실제 Supabase 인증/DB·Render·Gemini 호출·Android 실기기·배포 APK는 아직 검증하지 않았습니다.
+
+추가 검증: 로컬 PGlite PostgreSQL에서 새 DB 초기화(9개 migration), Android 계정 UUID 유지, 서버 역할 권한, public 접근 금지, 재실행 차단을 검증했습니다. 실제 Supabase 실행은 별도입니다.
