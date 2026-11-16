@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useApp } from "../../app/context";
 import { Asset, Button, Icon, Modal, Notice, Stats } from "../../ui/primitives";
-import { androidRuntime, androidDevelopment } from "../../lib/runtime";
+import { androidRuntime, androidDevelopment, offlineRuntime } from "../../lib/runtime";
 import { request, setToken } from "../../lib/api/client";
 import { copy, invite } from "../../lib/toss/bridge";
 import { NicknameForm } from "../profile/screens";
@@ -1106,10 +1106,10 @@ export function Account() {
             </svg>
           </button>
         </div>
-        <p className="account-friend-code">
+        {!offlineRuntime && (<p className="account-friend-code">
           <span>친구 코드</span>
           <strong>{a.data!.code}</strong>
-        </p>
+        </p>)}
         {editingNickname && (
           <div className="account-nickname-editor">
             <h4>닉네임 변경</h4>
@@ -1127,20 +1127,21 @@ export function Account() {
         <PrivacyDocument />
       </details>
       <SupportContact />
+      {offlineRuntime && <p>기록은 이 휴대폰에 저장돼요. 앱을 삭제하거나 저장 데이터를 지우면 기록도 삭제됩니다.</p>}
       <div className="account-session-actions">
         {(!androidRuntime || androidDevelopment) && (
           <button type="button" onClick={() => setLogoutConfirm(true)}>
             로그아웃
           </button>
         )}
-        {androidRuntime && !androidDevelopment && (
+        {androidRuntime && !androidDevelopment && !offlineRuntime && (
           <p>
             자동 계정으로 이용 중이에요. 앱 삭제나 기기 변경 시 현재 계정을
             복구할 수 없어요. 친구 코드는 계정 복구용이 아니에요.
           </p>
         )}
         <button type="button" onClick={() => setConfirm(true)}>
-          계정 삭제
+          {offlineRuntime ? "기기 기록 초기화" : "계정 삭제"}
         </button>
       </div>
       {logoutConfirm && (
@@ -1181,7 +1182,7 @@ export function Account() {
       )}
       {confirm && (
         <Modal
-          title="계정을 삭제할까요?"
+          title={offlineRuntime ? "기기 기록을 초기화할까요?" : "계정을 삭제할까요?"}
           onClose={() => {
             setConfirm(false);
           }}
@@ -1198,7 +1199,7 @@ export function Account() {
                   .perform(
                     async () => {
                       const result = await request("/v1/account", "DELETE");
-                      if (androidRuntime && !androidDevelopment)
+                      if (androidRuntime && !androidDevelopment && !offlineRuntime)
                         await (
                           await import("../../platform/android/auth")
                         ).clearAndroidAccount();

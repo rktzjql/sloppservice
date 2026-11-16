@@ -3,6 +3,7 @@ import { validateAndroidBuild } from "./android-build-policy";
 import react from "@vitejs/plugin-react";
 import { fileURLToPath } from "node:url";
 const android = process.env.VITE_APP_RUNTIME === "android";
+const offline = process.env.VITE_OFFLINE === "true";
 const source = (path: string) => fileURLToPath(new URL(path, import.meta.url));
 
 import { lockedViewport } from "./src/lib/scale-policy";
@@ -33,7 +34,7 @@ export default defineConfig(({ mode }) => {
             },
             {
               find: /^(.*\/)lib\/toss\/bridge$/,
-              replacement: source("./src/platform/android/bridge.ts"),
+              replacement: source(offline ? "./src/platform/offline/bridge.ts" : "./src/platform/android/bridge.ts"),
             },
             {
               find: "@apps-in-toss/web-framework",

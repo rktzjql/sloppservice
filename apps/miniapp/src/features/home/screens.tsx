@@ -1,3 +1,4 @@
+import { offlineRuntime } from "../../lib/runtime";
 import { ECONOMY_POLICY } from "@aimi/contracts";
 import React, { useState } from "react";
 import { useApp } from "../../app/context";
@@ -102,7 +103,7 @@ export function Home() {
         {[
           ["/optimizer", "프롬프트 개선기", "내 질문 다듬기 · 예시와 팁"],
           ["/recommendations", "AI 모델 추천", "Small / Medium / High 비교"],
-          ["/garden", "나의 정원", "캐릭터 선택 · 상점 · 친구 방문"],
+          ["/garden", "나의 정원", offlineRuntime ? "캐릭터 선택 · 정원 꾸미기 · 상점" : "캐릭터 선택 · 상점 · 친구 방문"],
         ].map(([url, title, desc]) => (
           <button key={url} onClick={() => a.navigate(url)}>
             <span>

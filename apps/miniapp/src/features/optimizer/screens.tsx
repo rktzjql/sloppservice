@@ -1,3 +1,4 @@
+import { offlineRuntime } from "../../lib/runtime";
 import { getModelCatalog } from "../../lib/api/catalog";
 import { ModelFacts, modelPriceLabel } from "./model-facts";
 import { sourceName } from "./model-copy";
@@ -125,7 +126,7 @@ export function Optimizer() {
   return (
     <>
       <p className="caption green" role="status">
-        {a.data?.aiQuota
+        {offlineRuntime ? "AI 연결 준비 중" : a.data?.aiQuota
           ? `오늘 남은 프롬프트 개선 ${a.data.aiQuota.optimizer.remaining} / ${a.data.aiQuota.optimizer.limit}회`
           : "남은 개선 횟수를 확인하고 있어요."}
       </p>
@@ -156,11 +157,11 @@ export function Optimizer() {
           )}
           <div className="fixed-cta">
             <Button
-              disabled={text.trim().length < 2 || waiting}
+              disabled={offlineRuntime || text.trim().length < 2 || waiting}
               loading={waiting || starting}
               onClick={() => void start()}
             >
-              {waiting ? "질문을 다듬고 있어요" : "개선안·예시 보기"}
+              {offlineRuntime ? "AI 연결 준비 중" : waiting ? "질문을 다듬고 있어요" : "개선안·예시 보기"}
             </Button>
           </div>
         </>
@@ -546,7 +547,7 @@ export function Recommendations() {
       </section>
       <AIUseNotice recommendation />
       <p className="caption ai-quota" role="status">
-        {a.data?.aiQuota
+        {offlineRuntime ? "AI 연결 준비 중" : a.data?.aiQuota
           ? `오늘 남은 모델 추천 ${a.data.aiQuota.analysis.remaining} / ${a.data.aiQuota.analysis.limit}회`
           : "남은 추천 횟수를 확인하고 있어요."}
       </p>
@@ -567,7 +568,7 @@ export function Recommendations() {
         />
         <button
           aria-label="모델 추천 실행"
-          disabled={text.trim().length < 2 || recommending}
+          disabled={offlineRuntime || text.trim().length < 2 || recommending}
           onClick={() => void run()}
         >
           {recommending ? (

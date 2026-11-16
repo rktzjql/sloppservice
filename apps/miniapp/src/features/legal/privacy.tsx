@@ -1,5 +1,5 @@
 import React from "react";
-import { androidRuntime } from "../../lib/runtime";
+import { androidRuntime, offlineRuntime } from "../../lib/runtime";
 export const SUPPORT_EMAIL = androidRuntime
   ? import.meta.env.VITE_SUPPORT_EMAIL
   : "fotrhh22@gmail.com";
@@ -8,6 +8,7 @@ export const PRIVACY_OPERATOR = androidRuntime
   : "Hunho Kang(강훈호)";
 export const PRIVACY_VERSION = "2026-11-13";
 export function SupportContact() {
+  if (offlineRuntime) return <section className="support-contact"><h2>앱 정보</h2><p>AIMI 기기 저장 버전 · 1.0.0</p><p>문의는 APK를 전달한 개발자에게 보내주세요.</p></section>;
   return (
     <section className="support-contact" aria-label="고객 문의">
       <h2>고객 문의</h2>
@@ -90,6 +91,18 @@ const sections = [
   },
 ];
 export function PrivacyDocument() {
+  if (offlineRuntime) return <article className="privacy-document">
+    <p className="caption">작성일 2026-11-16</p>
+    <h2>휴대폰에 저장하는 기록</h2>
+    <p>닉네임, 출석, 게임과 챌린지 기록, EP, 보유품, 정원 배치를 이 휴대폰 안에 저장해요.</p>
+    <p>회원가입이나 서버 연결 없이 사용할 수 있어요. 친구 기능과 AI 질문 개선·업무 분석은 이번 버전에 연결되어 있지 않아요.</p>
+    <h2>외부 연결</h2>
+    <p>앱의 이용 기록이나 입력 내용은 서버로 전송하지 않아요. 모델의 공식 사이트 링크를 직접 열면 해당 사이트의 개인정보 처리방침이 적용돼요.</p>
+    <h2>기록 삭제</h2>
+    <p>계정 관리의 기기 기록 초기화에서 기록을 지울 수 있어요. 앱 삭제나 앱 저장 데이터 삭제 시에도 기록이 지워지며, 다른 기기로 복구하거나 동기화할 수 없어요.</p>
+    <h2>문의</h2><p>APK를 전달한 개발자에게 문의해주세요.</p>
+  </article>;
+
   return (
     <article className="privacy-document">
       <p className="caption">작성일 {PRIVACY_VERSION}</p>

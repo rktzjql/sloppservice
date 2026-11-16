@@ -1,3 +1,4 @@
+import { offlineRuntime } from "../../lib/runtime";
 import React, { useLayoutEffect, useRef } from "react";
 
 export function BrandLogo() {
@@ -113,6 +114,8 @@ export function AIUseNotice({
     <p className="ai-use-notice">
       {image
         ? "AI로 미리 만든 그림의 키워드를 찾는 챌린지예요."
+        : offlineRuntime
+          ? "AI 연결 준비 중이에요. 이번 버전에서는 입력 내용을 외부로 보내지 않아요."
         : recommendation
           ? "업무를 분석하고 모델군을 판단하는 AI는 Google Gemini예요. 분석을 위해 입력 내용이 Google에 전달돼요."
           : "질문을 다듬는 AI는 Google Gemini예요. 개선을 위해 입력 내용이 Google에 전달돼요."}

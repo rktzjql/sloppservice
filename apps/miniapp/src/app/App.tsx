@@ -6,6 +6,7 @@ import {
   browserRuntime,
   androidRuntime,
   androidDevelopment,
+  offlineRuntime,
 } from "../lib/runtime";
 import { TossProvider } from "../ui/toss-provider";
 import { Button, BrandLogo, Icon } from "../ui/primitives";
@@ -59,6 +60,7 @@ function Screens() {
   }, [a.loading, a.authenticated]);
   useEffect(() => {
     if (
+      !offlineRuntime &&
       a.authenticated &&
       a.path !== "/privacy" &&
       sessionStorage.getItem("aimi.pending-invite")
@@ -216,7 +218,7 @@ function Screens() {
   else if (a.path.startsWith("/garden")) body = <Garden />;
   else if (shop) body = <Shop />;
   else if (a.path === "/social" || a.path.startsWith("/friends/"))
-    body = <Social />;
+    body = offlineRuntime ? <Home /> : <Social />;
   else if (["/optimizer", "/recommendations"].includes(a.path)) body = null;
   else if (a.path.startsWith("/models/"))
     body = <ModelDetails key={"models-" + a.aiEpoch} />;
@@ -312,7 +314,7 @@ function Screens() {
             ["/mission", "mission", "미션"],
             ["/garden", "garden", "정원"],
             ["/social", "social", "소셜"],
-          ].map(([url, icon, title]) => (
+          ].filter(([url]) => !offlineRuntime || url !== "/social").map(([url, icon, title]) => (
             <button
               key={url}
               aria-current={url === a.path ? "page" : undefined}

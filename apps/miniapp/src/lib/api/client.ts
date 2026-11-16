@@ -3,6 +3,7 @@ import {
   webDemoRuntime,
   androidRuntime,
   androidDevelopment,
+  offlineRuntime,
 } from "../runtime";
 import { createSessionRecovery } from "./session-recovery";
 export { localRuntime, browserRuntime, webDemoRuntime } from "../runtime";
@@ -43,11 +44,13 @@ export class RequestError extends Error {
 }
 const keys = new Map<string, string>();
 export function token() {
+  if (offlineRuntime) return "local-device";
   return localStorage.getItem(
     webDemoRuntime ? "aimi.web-demo.session" : "aimi.session",
   );
 }
 export function setToken(value: string | null, renewal = false) {
+  if (offlineRuntime) return;
   if (value !== token()) {
     if (!renewal && !webDemoRuntime)
       localStorage.removeItem("aimi.session.kind");
@@ -104,6 +107,22 @@ async function performRequest<T>(
   method = "GET",
   body?: unknown,
 ): Promise<T> {
+  if (offlineRuntime) {
+    const mutation = method !== "GET";
+    const signature = method + path + JSON.stringify(body);
+    if (!keys.has(signature)) keys.set(signature, crypto.randomUUID());
+    if (mutation) window.dispatchEvent(new Event("aimi-write-start"));
+    try {
+      const {offlineRequest} = await import("../../platform/offline/service");
+      const result = await offlineRequest<T>(path, method, body, keys.get(signature)!);
+      keys.delete(signature);
+      return result;
+    } catch (error) {
+      const e = error as {code?:string;status?:number};
+      if (e.status && e.status < 500) keys.delete(signature);
+      throw new RequestError(e.code ?? "LOCAL_STORAGE_FAILED", e.status ?? 500);
+    } finally {if (mutation) window.dispatchEvent(new Event("aimi-write-end"));}
+  }
   const signature = method + path + JSON.stringify(body),
     mutation = method !== "GET",
     idempotent = mutation && !path.startsWith("/auth/");
@@ -191,6 +210,10 @@ async function performRequest<T>(
   }
 }
 const messages: Record<string, string> = {
+  LOCAL_STORAGE_FAILED: "기록을 저장하지 못했어요. 저장 공간을 확인하고 다시 시도해주세요.",
+  LOCAL_STORAGE_BLOCKED: "다른 화면을 닫고 다시 실행해주세요.",
+  LOCAL_DATA_CORRUPT: "저장된 기록을 읽지 못했어요. 기록을 보호하기 위해 자동 초기화하지 않았어요.",
+  AI_NOT_CONNECTED: "AI 연결은 준비 중이에요. 현재 버전에서는 실제 AI 분석을 사용할 수 없어요.",
   ANDROID_AUTH_UNAVAILABLE:
     "연결이 지연되고 있어요. 인터넷 연결을 확인하고 다시 시도해주세요.",
   ANDROID_AUTH_INVALID:

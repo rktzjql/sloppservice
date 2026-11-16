@@ -1,6 +1,10 @@
 export function validateAndroidBuild(env: Record<string, string | undefined>) {
   if (env.VITE_APP_RUNTIME !== "android") return;
   if (env.VITE_ANDROID_DEV === "true") return;
+  if (env.VITE_OFFLINE === "true") {
+    if (env.VITE_TEST_DEMO === "true") throw Error("OFFLINE_FORBIDS_DEMO");
+    return;
+  }
   if (env.VITE_TEST_DEMO === "true" || env.AIMI_TEST_BUILD === "true")
     throw Error("ANDROID_RELEASE_FORBIDS_DEMO");
   for (const name of ["VITE_API_BASE_URL", "VITE_SUPABASE_URL"]) {

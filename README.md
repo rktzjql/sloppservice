@@ -1,6 +1,10 @@
-# AIMI 독립 Android 전환 작업본
+# AIMI Android — 기기 저장 APK
 
-현재 작업 상태와 새 서버 배포 방법은 [ANDROID_STANDALONE.md](docs/ANDROID_STANDALONE.md)를 참고하세요. 기존 로컬 개발 APK와 별개이며, 실제 서버 연결과 최종 APK 배포는 아직 완료되지 않았습니다.
+서버 설정 없이 설치하는 버전입니다. **[APK 다운로드](https://github.com/rktzjql/sloppservice/raw/refs/heads/aimi-offline-apk/downloads/AIMI-offline.apk)** · [설치·빌드·기능 범위](docs/ANDROID_OFFLINE.md)
+
+게임·챌린지·정원·상점·출석은 기기 안에서 실행·저장됩니다. 친구 기능은 제외했고, AI 질문 개선·업무 분석은 연결 전 상태입니다.
+
+아래는 원본 앱과 이전 온라인 전환 단계의 참고 설명입니다.
 
 # AIMI
 
